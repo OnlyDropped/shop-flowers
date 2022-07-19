@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="header">
+
+      <div class="header-menu">
+        <div class="container">
+          <div class="header-menu__inner">
+            <div class="header-menu__info">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="6.99999" r="6" stroke="#353949" stroke-width="1.5"/>
+                <path d="M7 4.33333V7L9 8.33333" stroke="#353949" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              Пн-Сб: 8:00–20:00 Вс: 9:00–20:00
+            </div>
+            <ul class="header-menu__list">
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Доставка</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Оплата</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Отзывы</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Блог</a></li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Информация
+                  <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <ul class="header-menu__content">
+                  <li class="header-menu__content-list"><a class="header-menu__content-link" href="#">Гарантии</a></li>
+                  <li class="header-menu__content-list"><a class="header-menu__content-link" href="#">Вопрос и ответ</a></li>
+                  <li class="header-menu__content-list"><a class="header-menu__content-link" href="#">Корпоративным клиентам</a></li>
+                  <li class="header-menu__content-list"><a class="header-menu__content-link" href="#">О компании</a></li>
+                </ul>
+              </li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">Контакты</a></li>
+            </ul>
+
+            <div class="header-menu__wrap">
+              <a class="header-menu__wrap-item" href="#">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.587 0.812527C17.7122 0.344211 17.587 0 16.9915 0H15.0223C14.5215 0 14.2908 0.297316 14.1657 0.625263C14.1657 0.625263 13.1642 3.36521 11.7455 5.145C11.2865 5.66021 11.0779 5.82395 10.8276 5.82395C10.7024 5.82395 10.5212 5.66021 10.5212 5.1919V0.812527C10.5212 0.250422 10.3759 0 9.95858 0H6.8641C6.55128 0 6.36308 0.260842 6.36308 0.508106C6.36308 1.041 7.07228 1.16384 7.14542 2.66258V5.91789C7.14542 6.63158 7.03064 6.76105 6.78027 6.76105C6.11271 6.76105 4.48895 4.00863 3.52573 0.859421C3.33697 0.247263 3.14764 0 2.64437 0H0.675158C0.112526 0 0 0.297316 0 0.625263C0 1.21074 0.667702 4.11474 3.10854 7.95537C4.73595 10.578 7.02839 12 9.11463 12C10.3665 12 10.5212 11.6842 10.5212 11.1403V9.15789C10.5212 8.52632 10.6398 8.40032 11.036 8.40032C11.3283 8.40032 11.8289 8.56421 12.9973 9.82879C14.3325 11.3274 14.5525 12 15.3036 12H17.2728C17.8354 12 18.1167 11.6842 17.9544 11.061C17.7769 10.4398 17.1394 9.53889 16.2935 8.47058C15.8346 7.86158 15.146 7.20584 14.9376 6.87805C14.6454 6.45647 14.7288 6.26921 14.9376 5.89468C14.9376 5.89468 17.3366 2.10079 17.587 0.812685V0.812527Z" fill="#505567"/>
+                </svg>
+              </a>
+              <a class="header-menu__wrap-item" href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.00072 9C6.00072 7.34321 7.3435 5.99976 9.00036 5.99976C10.6572 5.99976 12.0007 7.34321 12.0007 9C12.0007 10.6568 10.6572 12.0002 9.00036 12.0002C7.3435 12.0002 6.00072 10.6568 6.00072 9ZM4.37878 9C4.37878 11.5524 6.44786 13.6214 9.00036 13.6214C11.5529 13.6214 13.6219 11.5524 13.6219 9C13.6219 6.4476 11.5529 4.37861 9.00036 4.37861C6.44786 4.37861 4.37878 6.4476 4.37878 9ZM12.7249 4.19537C12.7248 4.40897 12.788 4.6178 12.9066 4.79546C13.0252 4.97311 13.1939 5.1116 13.3912 5.19342C13.5885 5.27525 13.8057 5.29672 14.0152 5.25513C14.2247 5.21354 14.4172 5.11076 14.5683 4.95978C14.7194 4.8088 14.8223 4.6164 14.8641 4.40692C14.9059 4.19744 14.8846 3.98028 14.8029 3.7829C14.7212 3.58552 14.5829 3.4168 14.4053 3.29805C14.2277 3.17931 14.0189 3.11589 13.8053 3.1158H13.8049C13.5186 3.11593 13.244 3.2297 13.0415 3.43212C12.839 3.63454 12.7251 3.90905 12.7249 4.19537ZM5.36421 16.3258C4.48672 16.2858 4.00977 16.1397 3.69281 16.0162C3.2726 15.8526 2.97278 15.6578 2.65755 15.343C2.34233 15.0282 2.1472 14.7287 1.98433 14.3085C1.86077 13.9917 1.7146 13.5146 1.67472 12.6372C1.63108 11.6885 1.62237 11.4035 1.62237 9.00007C1.62237 6.59664 1.6318 6.31246 1.67472 5.36299C1.71468 4.48553 1.86192 4.00939 1.98433 3.69166C2.14792 3.27146 2.34276 2.97166 2.65755 2.65644C2.97235 2.34122 3.27188 2.1461 3.69281 1.98324C4.00962 1.85969 4.48672 1.71353 5.36421 1.67364C6.31292 1.63001 6.59791 1.6213 9.00036 1.6213C11.4028 1.6213 11.6881 1.63073 12.6376 1.67364C13.5151 1.7136 13.9912 1.86084 14.309 1.98324C14.7292 2.1461 15.029 2.34166 15.3442 2.65644C15.6595 2.97122 15.8539 3.27146 16.0175 3.69166C16.141 4.00846 16.2872 4.48553 16.3271 5.36299C16.3707 6.31246 16.3794 6.59664 16.3794 9.00007C16.3794 11.4035 16.3707 11.6877 16.3271 12.6372C16.2871 13.5146 16.1402 13.9915 16.0175 14.3085C15.8539 14.7287 15.659 15.0285 15.3442 15.343C15.0294 15.6575 14.7292 15.8526 14.309 16.0162C13.9922 16.1397 13.5151 16.2859 12.6376 16.3258C11.6889 16.3694 11.4039 16.3781 9.00036 16.3781C6.59683 16.3781 6.31264 16.3694 5.36421 16.3258ZM5.28969 0.054504C4.33155 0.098136 3.67683 0.250056 3.10505 0.472536C2.5129 0.702288 2.01162 1.01052 1.51069 1.51063C1.00977 2.01074 0.702316 2.5128 0.472555 3.10493C0.250066 3.67704 0.0981399 4.33138 0.0545062 5.28948C0.0101524 6.2491 0 6.55589 0 9C0 11.4441 0.0101524 11.7509 0.0545062 12.7105C0.0981399 13.6687 0.250066 14.323 0.472555 14.8951C0.702316 15.4868 1.00984 15.9895 1.51069 16.4894C2.01154 16.9893 2.5129 17.2971 3.10505 17.5275C3.67791 17.7499 4.33155 17.9019 5.28969 17.9455C6.24985 17.9891 6.55615 18 9.00036 18C11.4446 18 11.7514 17.9898 12.711 17.9455C13.6692 17.9019 14.3235 17.7499 14.8957 17.5275C15.4875 17.2971 15.9891 16.9895 16.49 16.4894C16.991 15.9893 17.2978 15.4868 17.5282 14.8951C17.7507 14.323 17.9033 13.6686 17.9462 12.7105C17.9898 11.7502 18 11.4441 18 9C18 6.55589 17.9898 6.2491 17.9462 5.28948C17.9026 4.3313 17.7507 3.67668 17.5282 3.10493C17.2978 2.51316 16.9902 2.01154 16.49 1.51063C15.9899 1.00973 15.4875 0.702288 14.8964 0.472536C14.3235 0.250056 13.6692 0.097416 12.7117 0.054504C11.7521 0.010872 11.4453 0 9.00108 0C6.55687 0 6.24985 0.010152 5.28969 0.054504Z" fill="#505567"/>
+                </svg>
+              </a>
+              <a class="header-menu__wrap-item" href="#">
+                <img src="img/icons/user.svg" alt="user">
+                Мои заказы
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-info">
+        <div class="container">
+          <div class="header-info__wrapper">
+
+              <a class="header-info__logo" href="#">
+                <img src="img/icons/logo.svg" alt="logo">
+              </a>
+
+            <div class="header-info__title">
+              Доставка цветов в Воронеже
+            </div>
+
+            <form class="header-info__form" action="#">
+              <input class="header-info__text" type="text" placeholder="Поиск по сайту">
+            </form>
+
+            <div class="header-info__list">
+
+              <div class="header-info__item">
+                <a class="header-info__link" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11143 2.75015C3.24419 1.55893 3.64452 1.22482 4.12723 1.06933C4.46129 0.981944 4.81164 0.977092 5.148 1.05519C5.5908 1.1837 5.70794 1.28136 7.15993 2.72573C8.43557 3.99406 8.56301 4.13156 8.68529 4.37957C8.91912 4.8149 8.95565 5.32918 8.7857 5.7931C8.65698 6.14648 8.47419 6.38036 7.70057 7.15523L7.19597 7.66025C7.06346 7.79468 7.03232 7.99883 7.11874 8.16655C8.23983 10.0759 9.83037 11.6682 11.7399 12.7927C11.9597 12.9101 12.2303 12.8722 12.4092 12.6988L12.8945 12.2221C13.1945 11.9152 13.5121 11.626 13.8458 11.356C14.3699 11.0347 15.0229 11.0061 15.5732 11.2802C15.8423 11.4087 15.9311 11.4884 17.2466 12.7991C18.6034 14.1496 18.642 14.1921 18.7913 14.5017C19.0723 15.0144 19.0694 15.6353 18.7836 16.1453C18.6381 16.4331 18.5493 16.5372 17.786 17.316C17.3252 17.7863 16.8914 18.2155 16.8219 18.2784C16.1921 18.7989 15.3842 19.0543 14.5692 18.9904C13.078 18.8547 11.6347 18.3946 10.3407 17.6424C7.47418 16.1263 5.03395 13.9173 3.2429 11.2172C2.8528 10.6521 2.50598 10.0585 2.2054 9.4413C1.39906 8.06165 0.982659 6.4895 1.00055 4.89229C1.06211 4.05672 1.46351 3.28269 2.11143 2.75015Z" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="header-info__item header-info__call-back">
+                <a class="header-info__dropdown" href="#">
+                  +7 (920) 211-49-03
+                  <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41602 1.91666L5.99935 6.08333L10.5827 1.91666" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="header-info__down">
+                  <div class="header-info__top">
+                    <ul class="header-info__top-list">
+                      <li class="header-info__top-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11143 2.75015C3.24419 1.55893 3.64452 1.22482 4.12723 1.06933C4.46129 0.981944 4.81164 0.977092 5.148 1.05519C5.5908 1.1837 5.70794 1.28136 7.15993 2.72573C8.43557 3.99406 8.56301 4.13156 8.68529 4.37957C8.91912 4.8149 8.95565 5.32918 8.7857 5.7931C8.65698 6.14648 8.47419 6.38036 7.70057 7.15523L7.19597 7.66025C7.06346 7.79468 7.03232 7.99883 7.11874 8.16655C8.23983 10.0759 9.83037 11.6682 11.7399 12.7927C11.9597 12.9101 12.2303 12.8722 12.4092 12.6988L12.8945 12.2221C13.1945 11.9152 13.5121 11.626 13.8458 11.356C14.3699 11.0347 15.0229 11.0061 15.5732 11.2802C15.8423 11.4087 15.9311 11.4884 17.2466 12.7991C18.6034 14.1496 18.642 14.1921 18.7913 14.5017C19.0723 15.0144 19.0694 15.6353 18.7836 16.1453C18.6381 16.4331 18.5493 16.5372 17.786 17.316C17.3252 17.7863 16.8914 18.2155 16.8219 18.2784C16.1921 18.7989 15.3842 19.0543 14.5692 18.9904C13.078 18.8547 11.6347 18.3946 10.3407 17.6424C7.47418 16.1263 5.03395 13.9173 3.2429 11.2172C2.8528 10.6521 2.50598 10.0585 2.2054 9.4413C1.39906 8.06165 0.982659 6.4895 1.00055 4.89229C1.06211 4.05672 1.46351 3.28269 2.11143 2.75015Z" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        +7 (920) 211-49-03
+                      </li>
+                      <li class="header-info__top-item">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.4209 18.654L6.93847 19.2282L7.4209 18.654ZM14.2503 7.87975C14.2503 10.1196 13.1694 12.3037 11.8145 14.1479C10.468 15.9807 8.91197 17.395 8.09696 18.0797L9.06182 19.2282C9.92434 18.5036 11.5788 17.0022 13.0233 15.036C14.4595 13.0812 15.7503 10.5828 15.7503 7.87975H14.2503ZM7.90333 18.0797C7.08832 17.395 5.53231 15.9807 4.18579 14.1479C2.83089 12.3037 1.75 10.1196 1.75 7.87975H0.25C0.25 10.5828 1.5408 13.0812 2.97696 15.036C4.42151 17.0022 6.07595 18.5036 6.93847 19.2282L7.90333 18.0797ZM1.75 7.87975C1.75 4.42789 4.54828 1.62961 8.00014 1.62961V0.129608C3.71986 0.129608 0.25 3.59947 0.25 7.87975H1.75ZM8.00014 1.62961C11.452 1.62961 14.2503 4.42789 14.2503 7.87975H15.7503C15.7503 3.59947 12.2804 0.129608 8.00014 0.129608V1.62961ZM8.09696 18.0797C8.06261 18.1086 8.0288 18.1179 8.00014 18.1179C7.97149 18.1179 7.93768 18.1086 7.90333 18.0797L6.93847 19.2282C7.55696 19.7478 8.44332 19.7478 9.06182 19.2282L8.09696 18.0797Z" fill="#505567"/>
+                          <path d="M7.99995 10.3358C9.58342 10.3358 10.8671 9.05218 10.8671 7.46871C10.8671 5.88524 9.58342 4.60158 7.99995 4.60158C6.41647 4.60158 5.13281 5.88524 5.13281 7.46871C5.13281 9.05218 6.41647 10.3358 7.99995 10.3358Z" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        ул. Революции 1905 года 80
+                      </li>
+                      <li class="header-info__top-item">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.4209 18.654L6.93847 19.2282L7.4209 18.654ZM14.2503 7.87975C14.2503 10.1196 13.1694 12.3037 11.8145 14.1479C10.468 15.9807 8.91197 17.395 8.09696 18.0797L9.06182 19.2282C9.92434 18.5036 11.5788 17.0022 13.0233 15.036C14.4595 13.0812 15.7503 10.5828 15.7503 7.87975H14.2503ZM7.90333 18.0797C7.08832 17.395 5.53231 15.9807 4.18579 14.1479C2.83089 12.3037 1.75 10.1196 1.75 7.87975H0.25C0.25 10.5828 1.5408 13.0812 2.97696 15.036C4.42151 17.0022 6.07595 18.5036 6.93847 19.2282L7.90333 18.0797ZM1.75 7.87975C1.75 4.42789 4.54828 1.62961 8.00014 1.62961V0.129608C3.71986 0.129608 0.25 3.59947 0.25 7.87975H1.75ZM8.00014 1.62961C11.452 1.62961 14.2503 4.42789 14.2503 7.87975H15.7503C15.7503 3.59947 12.2804 0.129608 8.00014 0.129608V1.62961ZM8.09696 18.0797C8.06261 18.1086 8.0288 18.1179 8.00014 18.1179C7.97149 18.1179 7.93768 18.1086 7.90333 18.0797L6.93847 19.2282C7.55696 19.7478 8.44332 19.7478 9.06182 19.2282L8.09696 18.0797Z" fill="#505567"/>
+                          <path d="M7.99995 10.3358C9.58342 10.3358 10.8671 9.05218 10.8671 7.46871C10.8671 5.88524 9.58342 4.60158 7.99995 4.60158C6.41647 4.60158 5.13281 5.88524 5.13281 7.46871C5.13281 9.05218 6.41647 10.3358 7.99995 10.3358Z" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        ул. Вл. Невского 17
+                      </li>
+                      <li class="header-info__top-item" style="color: #0093A2;">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.49592 14.8199C1.61411 15.7778 2.38404 16.5321 3.34421 16.6302C5.48059 16.8483 7.70887 17.1168 9.99958 17.1168C12.2903 17.1168 14.5186 16.8483 16.655 16.6302C17.6151 16.5321 18.385 15.7778 18.5032 14.8199C18.7341 12.9491 18.9992 11.001 18.9992 8.99996C18.9992 6.9989 18.7341 5.05083 18.5032 3.18005C18.385 2.22215 17.6151 1.4678 16.655 1.36976C14.5186 1.15161 12.2903 0.883148 9.99958 0.883148C7.70887 0.883148 5.48059 1.15161 3.34421 1.36976C2.38404 1.4678 1.61411 2.22215 1.49592 3.18005C1.26509 5.05083 1 6.9989 1 8.99996C1 11.001 1.26509 12.9491 1.49592 14.8199Z" stroke="#505567" stroke-width="1.5" stroke-linejoin="round"/>
+                          <path d="M1.44531 3.53452L8.76082 9.30255C9.48707 9.87517 10.5112 9.87517 11.2374 9.30255L18.553 3.53452" stroke="#505567" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                        info@lavkaroz.ru
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-info__social">
+                    <div class="header-info__social-title">Напишите нам:</div>
+                    <ul class="header-info__social-list">
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/WhatsApp.svg" alt="WhatsApp">
+                      </a>
+                    </li>
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/Telegram.svg" alt="Telegram.svg">
+                      </a>
+                    </li>
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/Vkontakte.svg" alt="Vkontakte">
+                      </a>
+                    </li>
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/Instagram.svg" alt="Instagram">
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-info__call">Заказать звонок</div>
+              </div>
+
+              <div class="header-info__item">
+                <a class="header-info__link" href="#">
+                  <img src="img/icons/heart.svg" alt="heart">
+                </a>
+              </div>
+
+              <div class="header-info__item header-info__item-user">
+                <div class="header-info__order">
+                  <a class="header-info__link header-info__cart" href="#">
+                    <img src="img/icons/cart.svg" alt="cart">
+                  </a>
+                </div>
+                <div class="header-info__num">2</div>
+                <div class="header-info__number">16 500 ₽</div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+
+        <div class="container">
+          <ul class="header-nav__list">
+
+          <li class="header-nav__item">
+            <a class="header-nav__link header-nav__link--sale" href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_708_16371)">
+                  <path d="M2.85788 5.10023C2.85788 4.50587 3.094 3.93585 3.51427 3.51557C3.93455 3.09529 4.50457 2.85918 5.09894 2.85918H6.1176C6.70934 2.85884 7.27693 2.62448 7.69652 2.20724L8.40959 1.49418C8.61785 1.28474 8.86546 1.11854 9.13817 1.00513C9.41089 0.891713 9.70334 0.833328 9.9987 0.833328C10.2941 0.833328 10.5865 0.891713 10.8592 1.00513C11.1319 1.11854 11.3795 1.28474 11.5878 1.49418L12.3009 2.20724C12.7205 2.62448 13.2881 2.85884 13.8798 2.85918H14.8985C15.4928 2.85918 16.0628 3.09529 16.4831 3.51557C16.9034 3.93585 17.1395 4.50587 17.1395 5.10023V6.1189C17.1398 6.71063 17.3742 7.27822 17.7915 7.69782L18.5045 8.41088C18.714 8.61914 18.8802 8.86675 18.9936 9.13947C19.107 9.41219 19.1654 9.70463 19.1654 9.99999C19.1654 10.2954 19.107 10.5878 18.9936 10.8605C18.8802 11.1332 18.714 11.3808 18.5045 11.5891L17.7915 12.3022C17.3742 12.7218 17.1398 13.2894 17.1395 13.8811V14.8998C17.1395 15.4941 16.9034 16.0641 16.4831 16.4844C16.0628 16.9047 15.4928 17.1408 14.8985 17.1408H13.8798C13.2881 17.1411 12.7205 17.3755 12.3009 17.7927L11.5878 18.5058C11.3795 18.7152 11.1319 18.8814 10.8592 18.9949C10.5865 19.1083 10.2941 19.1667 9.9987 19.1667C9.70334 19.1667 9.41089 19.1083 9.13817 18.9949C8.86546 18.8814 8.61785 18.7152 8.40959 18.5058L7.69652 17.7927C7.27693 17.3755 6.70934 17.1411 6.1176 17.1408H5.09894C4.50457 17.1408 3.93455 16.9047 3.51427 16.4844C3.094 16.0641 2.85788 15.4941 2.85788 14.8998V13.8811C2.85755 13.2894 2.62319 12.7218 2.20594 12.3022L1.49288 11.5891C1.28344 11.3808 1.11724 11.1332 1.00383 10.8605C0.890416 10.5878 0.832031 10.2954 0.832031 9.99999C0.832031 9.70463 0.890416 9.41219 1.00383 9.13947C1.11724 8.86675 1.28344 8.61914 1.49288 8.41088L2.20594 7.69782C2.62319 7.27822 2.85755 6.71063 2.85788 6.1189V5.10023Z" fill="#E2195B"/>
+                  <path d="M2.85788 5.10024C2.85788 4.50587 3.094 3.93585 3.51427 3.51557C3.93455 3.09529 4.50457 2.85918 5.09894 2.85918H6.1176C6.70934 2.85884 7.27693 2.62448 7.69652 2.20724L8.40959 1.49418C8.61785 1.28474 8.86546 1.11854 9.13817 1.00513C9.41089 0.891713 9.70334 0.833328 9.9987 0.833328C10.2941 0.833328 10.5865 0.891713 10.8592 1.00513C11.1319 1.11854 11.3795 1.28474 11.5878 1.49418L12.3009 2.20724C12.7205 2.62448 13.2881 2.85884 13.8798 2.85918H14.8985C15.4928 2.85918 16.0628 3.09529 16.4831 3.51557C16.9034 3.93585 17.1395 4.50587 17.1395 5.10024V6.1189C17.1398 6.71063 17.3742 7.27822 17.7915 7.69782L18.5045 8.41088C18.714 8.61915 18.8802 8.86675 18.9936 9.13947C19.107 9.41219 19.1654 9.70463 19.1654 9.99999C19.1654 10.2954 19.107 10.5878 18.9936 10.8605C18.8802 11.1332 18.714 11.3808 18.5045 11.5891L17.7915 12.3022C17.3742 12.7218 17.1398 13.2894 17.1395 13.8811V14.8998C17.1395 15.4941 16.9034 16.0641 16.4831 16.4844C16.0628 16.9047 15.4928 17.1408 14.8985 17.1408H13.8798C13.2881 17.1411 12.7205 17.3755 12.3009 17.7927L11.5878 18.5058C11.3795 18.7152 11.1319 18.8814 10.8592 18.9949C10.5865 19.1083 10.2941 19.1667 9.9987 19.1667C9.70334 19.1667 9.41089 19.1083 9.13817 18.9949C8.86546 18.8814 8.61785 18.7152 8.40959 18.5058L7.69652 17.7927C7.27693 17.3755 6.70934 17.1411 6.1176 17.1408H5.09894C4.50457 17.1408 3.93455 16.9047 3.51427 16.4844C3.094 16.0641 2.85788 15.4941 2.85788 14.8998V13.8811C2.85755 13.2894 2.62319 12.7218 2.20594 12.3022L1.49288 11.5891C1.28344 11.3808 1.11724 11.1332 1.00383 10.8605C0.890416 10.5878 0.832031 10.2954 0.832031 9.99999C0.832031 9.70463 0.890416 9.41219 1.00383 9.13947C1.11724 8.86675 1.28344 8.61915 1.49288 8.41088L2.20594 7.69782C2.62319 7.27822 2.85755 6.71063 2.85788 6.1189V5.10024" stroke="#E2195B" stroke-width="2"/>
+                  <path d="M6.66797 13.3333L13.3346 6.66667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.22352 7.77778C7.53035 7.77778 7.77908 7.52905 7.77908 7.22223C7.77908 6.9154 7.53035 6.66667 7.22352 6.66667C6.9167 6.66667 6.66797 6.9154 6.66797 7.22223C6.66797 7.52905 6.9167 7.77778 7.22352 7.77778Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.7782 13.3333C13.085 13.3333 13.3338 13.0846 13.3338 12.7778C13.3338 12.471 13.085 12.2222 12.7782 12.2222C12.4714 12.2222 12.2227 12.471 12.2227 12.7778C12.2227 13.0846 12.4714 13.3333 12.7782 13.3333Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_708_16371">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+              </svg>
+              АКЦИИ
+            </a>
+          </li>
+
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Цветы поштучно
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Розы
+              <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+              <ul class="header-nav__menu">
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Голландские розы</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Местная роза</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Кустовые розы</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Пионовидные розы</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Букет из 101 розы</a>
+                </li>
+              </ul>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Букеты
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Композиции
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Подарки
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Шары
+              <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41602 1.91667L5.99935 6.08334L10.5827 1.91667" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <ul class="header-nav__menu">
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Голландские розы</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Местная роза</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Кустовые розы</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Пионовидные розы</a>
+                </li>
+                <li class="header-nav__menu-list">
+                  <a class="header-nav__menu-link" href="#">Букет из 101 розы</a>
+                </li>
+              </ul>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Свадебные букеты
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">
+              Повод
+            </a>
+          </li>
+
+          </ul>
+        </div>
+        
+
+      </div>
+
+
+  </header>
+
+  <main class="main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--first" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Букеты из роз</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Букеты из роз</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card card-two card-three card-four">
+      <div class="container">
+        <div class="card__inner">
+
+          <div class="card-three__inner">
+            <div class="card-slider">
+
+            <div class="card-slider__thumb-big">
+              <div class="card-slider__thumb">
+                <img class="card-slider__thumb-img" src="img/slider/card-slider.png" alt="">
+              </div>
+              <div class="card-slider__thumb">
+                <img class="card-slider__thumb-img" src="img/slider/card-slider-two.png" alt="">
+              </div>
+              <div class="card-slider__thumb">
+                <img class="card-slider__thumb-img" src="img/slider/card-slider-three.png" alt="">
+              </div>
+              <div class="card-slider__thumb">
+                <img class="card-slider__thumb-img" src="img/slider/card-slider.png" alt="">
+              </div>
+              <div class="card-slider__thumb">
+                <img class="card-slider__thumb-img" src="img/slider/card-slider.png" alt="">
+              </div>
+            </div>
+
+            <div class="card-slider__preview">
+              <div class="card-slider__preview-item">
+                <div class="card-slider__preview-small">
+                  <img class="card-slider__preview-img" src="img/slider/card-slider.png" alt="">
+                </div>
+              </div>
+              <div class="card-slider__preview-item">
+                <div class="card-slider__preview-small">
+                  <img class="card-slider__preview-img" src="img/slider/card-slider-two.png" alt="">
+                </div>
+              </div>
+              <div class="card-slider__preview-item">
+                <div class="card-slider__preview-small">
+                  <img class="card-slider__preview-img" src="img/slider/card-slider-three.png" alt="">
+                </div>
+              </div>
+              <div class="card-slider__preview-item">
+                <div class="card-slider__preview-small">
+                  <img class="card-slider__preview-img" src="img/slider/card-slider.png" alt="">
+                </div>
+              </div>
+              <div class="card-slider__preview-item">
+                <div class="card-slider__preview-small">
+                  <img class="card-slider__preview-img" src="img/slider/card-slider.png" alt="">
+                </div>
+              </div>
+
+            </div>
+            
+            </div>
+            <div class="card-three__content">
+              <p class="card-three__text">Сто одна красная роза – безупречный выбор для тех, кто хочет показать свою любовь и преданность, поразить свою избранницу и вызвать настоящий восторг.</p>
+              <p class="card-three__text">Цвет и размеры бутонов могут отличаться представленных на фото, цветы являются природным материалом.</p>
+            </div>
+          </div>
+          
+
+          <div class="card-info">
+            <h2 class="card-info__title">Букет малиновых роз</h2>
+            <div class="card-info__parametr">
+              <div class="card-info__height">Высота:
+                <div class="card-info__num"> 50см</div>
+              </div>
+              <div class="card-info__width">Ширина:
+                <div class="card-info__num"> 35см</div>
+              </div>
+            </div>
+            <div class="card-info__sizes">
+              <div class="card-info__size">
+                Размер: 
+                <div class="card-info__color">Standart</div>
+              </div>
+              <div class="card-info__size card-info__colors">
+                Цвет: 
+                <div class="card-info__color ">Красный</div>
+              </div>
+            </div>
+            <form class="card-info__form" action="#">
+              <div class="card-info__form-title">Размер</div>
+              <div class="card-info__wrap">
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span card-info__span--first">STANDART</span>
+                </label>
+              </div>
+              
+            </form>
+
+            <form class="card-info__form card-info__form--active" action="#">
+              <div class="card-info__form-title">Упаковка</div>
+              <div class="card-info__wrap">
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Ленточка</span>
+                </label>
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Крафт (+290₽)</span>
+                </label>
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Корейская (+390₽)</span>
+                </label>
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Премиум (+490₽)</span>
+                </label>
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Корзинка (+1000₽)</span>
+                </label>
+              </div>
+              
+            </form>
+
+            <form class="card-info__form card-info__form--active" action="#">
+              <div class="card-info__form-title">Зелень</div>
+              <div class="card-info__wrap">
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Нет</span>
+                </label>
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Немного (+150₽)</span>
+                </label>
+                <label class="card-info__label">
+                  <input class="card-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                  <span class="card-info__span">Побольше (+300₽)</span>
+                </label>
+              </div>
+              
+            </form>
+
+            <div class="card-info__discount">
+              <div class="card-info__price">
+                <div class="card-info__price-new">13 499 ₽</div>
+                <div class="card-info__price-old">15 499 ₽</div>
+              </div>
+              <input class="card-info__input" type="number" min="1" step="1" value="1">
+            </div>
+            <div class="card-info__buy">
+              <div class="card-info__get-buy">                
+                <button class="card-info__btn">
+                  <img src="img/icons/shopping.svg" alt="shopping">
+                  Купить
+                </button>
+              </div>
+              <button class="card-info__click">Купить в один клик</button>
+              <button class="card-info__button">
+                <img src="img/icons/heart.svg" alt="">
+              </button>
+            </div>
+            <div class="card-info__structure">
+              <div class="card-info__structure-title">Состав:</div>
+                <div class="card-info__list">
+                  <div class="card-info__item">
+                    Роза пионовидная вайлд лук
+                    <div class="card-info__thing">- 7 шт.</div>
+                  </div>
+                  <div class="card-info__item">
+                      Роза кустовая пионовидная 
+                    <div class="card-info__thing">- 3 шт.</div>
+                  </div>
+                  <div class="card-info__item">
+                      Озотамнус 
+                    <div class="card-info__thing">- 2 шт.</div>
+                  </div>
+                  <div class="card-info__item">
+                      Эвкалипт
+                    <div class="card-info__thing">- 6 шт.</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="card-property">
+            <div class="card-property__item">
+              <div class="card-property__title">
+                Доставка в ваш город от 290 ₽.
+              </div>
+              <ul class="card-property__list">
+                <li class="card-property__items">• В дневное время с 9:00 до 21:00 - 299₽.</li>
+                <li class="card-property__items">• В ночное время с 21:00 до 9:00 - 350₽.</li>
+                <li class="card-property__items">• При заказе от 4000 ₽ - доставка бесплатно.</li>
+                <li class="card-property__items">• Доставка к точному времени - 700₽.</li>
+              </ul>
+              <a class="card-property__delivery" href="#">Подробнее о доставке</a>
+            </div>
+            <div class="card-property__item">
+              <div class="card-property__title">
+                Способы оплаты
+              </div>
+              <p class="card-property__text">Вы можете оплатить наличными или картой:</p>
+              <div class="card-property__accept">
+                <div class="card-property__items">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_755_10431)">
+<path d="M1.67189 2.46973H13.3906C14.0352 2.46973 14.5625 2.99707 14.5625 3.64161V5.04788C14.5625 5.69242 14.0352 6.21976 13.3906 6.21976H1.67189C1.02734 6.2197 0.5 5.69236 0.5 5.04785V3.64158C0.5 2.99707 1.02734 2.46973 1.67189 2.46973Z" fill="#A86A3F"/>
+<path d="M4.23828 3.72324L11.5742 1.77794C11.8203 1.70763 12.0781 1.85997 12.1484 2.10607L13.3672 6.60608C13.4375 6.85218 13.2851 7.10997 13.039 7.18028L3.48829 9.72323C3.24219 9.79354 2.98439 9.6412 2.91408 9.3951L2.02344 6.09043L4.23828 3.72324Z" fill="#5EBA6D"/>
+<path d="M12.091 6.46531L10.509 6.88717C10.3801 6.92234 10.2512 6.852 10.2278 6.7231C10.1926 6.5942 10.2629 6.46528 10.3918 6.44186L11.7512 6.07858L11.0247 3.35984L9.6653 3.72312C9.5364 3.75829 9.40747 3.68795 9.38405 3.55905C9.34888 3.43015 9.41922 3.30123 9.54812 3.27781L11.1301 2.85595C11.259 2.82078 11.388 2.89112 11.4114 3.02001L12.2551 6.18406C12.2902 6.31296 12.2199 6.44186 12.091 6.46531ZM5.52854 8.23485L3.94652 8.65671C3.81762 8.69188 3.68869 8.62154 3.66527 8.49264L2.82152 5.32859C2.78635 5.19969 2.85669 5.07076 2.98559 5.04735L4.56761 4.62549C4.69651 4.59032 4.82544 4.66066 4.84885 4.78955C4.88402 4.91845 4.81368 5.04738 4.68479 5.07079L3.32542 5.43407L4.05197 8.15281L5.41134 7.78954C5.54023 7.75437 5.66916 7.82471 5.69258 7.9536C5.72775 8.07078 5.65744 8.19968 5.52854 8.23485Z" fill="#B3F0BD"/>
+<path d="M0.593784 5.36407C2.6797 4.16874 8.30473 0.875761 8.30473 0.875761C8.52738 0.746864 8.82035 0.817174 8.94927 1.03983L11.293 5.07108C11.4219 5.29373 11.3399 5.57497 11.1172 5.7039L2.53908 10.6258C2.31643 10.7547 2.02346 10.6844 1.89454 10.4617C1.89454 10.4617 1.2383 9.12577 0.582031 8.00075C0.582061 5.36407 0.593784 6.23124 0.593784 5.36407Z" fill="#5EBA6D"/>
+<path d="M10.0966 4.94184L8.456 2.1059C8.38569 1.98872 8.24507 1.95355 8.13959 2.02386L6.72163 2.84417C6.60446 2.91448 6.56929 3.0551 6.6396 3.16058C6.70991 3.27775 6.85053 3.31292 6.95601 3.24261L8.17476 2.53948L9.58102 4.97698L8.36227 5.68011C8.2451 5.75042 8.20993 5.89104 8.28024 5.99652C8.35055 6.1137 8.49117 6.14887 8.59665 6.07856L10.0146 5.25825C10.1201 5.19966 10.1669 5.05904 10.0966 4.94184ZM3.88569 8.25826L2.66694 8.96139L1.26067 6.52386L2.47942 5.82073C2.5966 5.75042 2.63177 5.6098 2.56146 5.50432C2.49115 5.38715 2.35053 5.35198 2.24505 5.42229L0.827089 6.24259C0.709916 6.3129 0.674746 6.45352 0.745056 6.559L2.38567 9.39495C2.45598 9.51212 2.5966 9.54729 2.70208 9.47698L4.12003 8.65667C4.23721 8.58636 4.27238 8.44574 4.20207 8.34026C4.14348 8.23481 4.00286 8.18792 3.88569 8.25826ZM4.48334 4.12154C3.581 4.63715 3.27631 5.78559 3.79193 6.68793C4.31927 7.59027 5.45599 7.89496 6.35833 7.37934C7.26067 6.86372 7.56535 5.71528 7.04974 4.81294C6.52239 3.9223 5.38568 3.60592 4.48334 4.12154ZM10.0966 4.94184L8.456 2.1059C8.38569 1.98872 8.24507 1.95355 8.13959 2.02386L6.72163 2.84417C6.60446 2.91448 6.56929 3.0551 6.6396 3.16058C6.70991 3.27775 6.85053 3.31292 6.95601 3.24261L8.17476 2.53948L9.58102 4.97698L8.36227 5.68011C8.2451 5.75042 8.20993 5.89104 8.28024 5.99652C8.35055 6.1137 8.49117 6.14887 8.59665 6.07856L10.0146 5.25825C10.1201 5.19966 10.1669 5.05904 10.0966 4.94184ZM3.88569 8.25826L2.66694 8.96139L1.26067 6.52386L2.47942 5.82073C2.5966 5.75042 2.63177 5.6098 2.56146 5.50432C2.49115 5.38715 2.35053 5.35198 2.24505 5.42229L0.827089 6.24259C0.709916 6.3129 0.674746 6.45352 0.745056 6.559L2.38567 9.39495C2.45598 9.51212 2.5966 9.54729 2.70208 9.47698L4.12003 8.65667C4.23721 8.58636 4.27238 8.44574 4.20207 8.34026C4.14348 8.23481 4.00286 8.18792 3.88569 8.25826ZM4.48334 4.12154C3.581 4.63715 3.27631 5.78559 3.79193 6.68793C4.31927 7.59027 5.45599 7.89496 6.35833 7.37934C7.26067 6.86372 7.56535 5.71528 7.04974 4.81294C6.52239 3.9223 5.38568 3.60592 4.48334 4.12154Z" fill="#B3F0BD"/>
+<path d="M13.8594 14.1885H1.67189C1.02734 14.1885 0.5 13.6611 0.5 13.0166V4.57911H13.8594C14.5039 4.57911 15.0313 5.10645 15.0313 5.751V13.0166C15.0312 13.6611 14.5039 14.1885 13.8594 14.1885ZM1.43751 4.57911H0.5V3.6416C0.5 4.15722 0.921861 4.57911 1.43751 4.57911Z" fill="#C47E4D"/>
+<path d="M15.0312 11.2588H13.1562C12.2539 11.2588 11.5156 10.5205 11.5156 9.61815C11.5156 8.71581 12.2539 7.97754 13.1562 7.97754H15.0312C15.2891 7.97754 15.5 8.18847 15.5 8.44629V10.79C15.5 11.0478 15.2891 11.2588 15.0312 11.2588Z" fill="#A86A3F"/>
+<path d="M13.1563 8.68066C13.6719 8.68066 14.0938 9.10252 14.0938 9.61817C14.0938 10.1338 13.6719 10.5557 13.1563 10.5557C12.6406 10.5557 12.2188 10.1338 12.2188 9.61817C12.2188 9.10252 12.6406 8.68066 13.1563 8.68066Z" fill="#EFC75E"/>
+<path d="M13.3906 10.3213C12.875 10.3213 12.4531 9.89943 12.4531 9.38379C12.4531 9.18458 12.5117 8.99707 12.6172 8.84473C12.3711 9.00879 12.2188 9.29003 12.2188 9.61816C12.2188 10.1338 12.6406 10.5557 13.1563 10.5557C13.4727 10.5557 13.7539 10.3916 13.9297 10.1572C13.7773 10.2627 13.5898 10.3213 13.3906 10.3213Z" fill="#D7B354"/>
+<path d="M13.8594 13.7197H1.67189C1.02734 13.7197 0.5 13.1924 0.5 12.5479V13.0166C0.5 13.6611 1.02734 14.1885 1.67189 14.1885H13.8594C14.5039 14.1885 15.0313 13.6611 15.0313 13.0166V12.5479C15.0312 13.1924 14.5039 13.7197 13.8594 13.7197Z" fill="#B27245"/>
+<path d="M13.8594 4.57911H1.43751C0.921861 4.57911 0.5 4.15722 0.5 3.6416V4.11036C0.5 4.62597 0.921861 5.04787 1.43751 5.04787H13.8594C14.5039 5.04787 15.0313 5.57521 15.0313 6.21975V5.751C15.0312 5.10645 14.5039 4.57911 13.8594 4.57911Z" fill="#CA8B5F"/>
+</g>
+<defs>
+<clipPath id="clip0_755_10431">
+<rect width="15" height="15" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="36" height="15" viewBox="0 0 36 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_755_10445)">
+<path d="M15.6481 13.3246H12.8164L14.5876 2.0603H17.4191L15.6481 13.3246Z" fill="#00579F"/>
+<path d="M25.9123 2.33552C25.3538 2.10761 24.4678 1.85596 23.3725 1.85596C20.5761 1.85596 18.6069 3.38974 18.5948 5.58259C18.5716 7.20047 20.0047 8.0991 21.0766 8.6385C22.1721 9.18978 22.5445 9.54954 22.5445 10.0409C22.5333 10.7956 21.6593 11.1434 20.844 11.1434C19.7134 11.1434 19.1077 10.964 18.1871 10.5442L17.8142 10.3642L17.418 12.8928C18.0822 13.204 19.3058 13.4802 20.5761 13.4923C23.5473 13.4923 25.4817 11.9823 25.5045 9.64542C25.5159 8.36316 24.7592 7.38061 23.1277 6.57772C22.1373 6.06232 21.5307 5.71478 21.5307 5.18744C21.5424 4.70803 22.0437 4.217 23.1618 4.217C24.0823 4.19294 24.7587 4.42054 25.271 4.6483L25.5272 4.76792L25.9123 2.33552Z" fill="#00579F"/>
+<path d="M29.676 9.33405C29.9092 8.68695 30.8065 6.18241 30.8065 6.18241C30.7948 6.20646 31.0393 5.52334 31.1791 5.10398L31.377 6.07458C31.377 6.07458 31.9132 8.77089 32.0297 9.33405C31.5872 9.33405 30.2353 9.33405 29.676 9.33405ZM33.1714 2.0603H30.9811C30.3056 2.0603 29.7925 2.26385 29.501 2.99491L25.2949 13.3245H28.2661C28.2661 13.3245 28.7553 11.9341 28.8604 11.6347C29.1864 11.6347 32.0768 11.6347 32.4961 11.6347C32.5774 12.0302 32.834 13.3245 32.834 13.3245H35.4558L33.1714 2.0603Z" fill="#00579F"/>
+<path d="M10.4521 2.0603L7.67897 9.74151L7.37593 8.18367C6.86323 6.38611 5.25531 4.43313 3.46094 3.46205L6.00105 13.3126H8.99549L13.4464 2.0603H10.4521Z" fill="#00579F"/>
+<path d="M5.10252 2.0603H0.546609L0.5 2.2879C4.0539 3.22266 6.40759 5.47588 7.37458 8.18415L6.3842 3.00717C6.22114 2.28774 5.72005 2.08403 5.10252 2.0603Z" fill="#FAA61A"/>
+</g>
+<defs>
+<clipPath id="clip0_755_10445">
+<rect width="35" height="15" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_755_10452)">
+<path d="M19.1116 14.7969V14.8359H19.1471C19.1549 14.8359 19.1617 14.834 19.1665 14.831C19.171 14.828 19.1736 14.8226 19.1736 14.8162C19.1736 14.8097 19.171 14.8048 19.1665 14.8018C19.1617 14.7984 19.1549 14.7969 19.1471 14.7969H19.1116ZM19.1474 14.7696C19.1658 14.7696 19.18 14.7737 19.1901 14.7821C19.2001 14.7904 19.205 14.8018 19.205 14.8162C19.205 14.8283 19.2012 14.8382 19.193 14.8461C19.1852 14.8537 19.174 14.8586 19.159 14.8605L19.2061 14.9155H19.1695L19.1258 14.8609H19.1116V14.9155H19.081V14.7696H19.1474ZM19.1381 14.9658C19.1549 14.9658 19.1706 14.9624 19.1848 14.956C19.1994 14.9496 19.212 14.9409 19.2229 14.9298C19.2338 14.9189 19.2423 14.906 19.2487 14.8908C19.2547 14.8761 19.258 14.8601 19.258 14.8431C19.258 14.8261 19.2547 14.8101 19.2487 14.7954C19.2423 14.7806 19.2338 14.7673 19.2229 14.7563C19.212 14.7453 19.1994 14.7366 19.1848 14.7302C19.1706 14.7241 19.1549 14.7211 19.1381 14.7211C19.1213 14.7211 19.1052 14.7241 19.0907 14.7302C19.0758 14.7366 19.0627 14.7453 19.0519 14.7563C19.041 14.7673 19.0325 14.7806 19.0265 14.7954C19.0201 14.8101 19.0172 14.8261 19.0172 14.8431C19.0172 14.8601 19.0201 14.8761 19.0265 14.8908C19.0325 14.906 19.041 14.9189 19.0519 14.9298C19.0627 14.9409 19.0758 14.9496 19.0907 14.956C19.1052 14.9624 19.1213 14.9658 19.1381 14.9658ZM19.1381 14.6859C19.1602 14.6859 19.1803 14.69 19.1997 14.6983C19.2188 14.7063 19.2353 14.7176 19.2498 14.7321C19.264 14.7461 19.2752 14.7628 19.2834 14.7821C19.2916 14.801 19.2957 14.8215 19.2957 14.8431C19.2957 14.8647 19.2916 14.8851 19.2834 14.9041C19.2752 14.923 19.264 14.9397 19.2498 14.9541C19.2353 14.9681 19.2188 14.9795 19.1997 14.9878C19.1803 14.9962 19.1602 15.0003 19.1381 15.0003C19.1157 15.0003 19.0952 14.9962 19.0758 14.9878C19.0564 14.9795 19.0396 14.9681 19.0253 14.9541C19.0112 14.9397 18.9999 14.923 18.9918 14.9041C18.9835 14.8851 18.9794 14.8647 18.9794 14.8431C18.9794 14.8215 18.9835 14.801 18.9918 14.7821C18.9999 14.7628 19.0112 14.7461 19.0253 14.7321C19.0396 14.7176 19.0564 14.7063 19.0758 14.6983C19.0952 14.69 19.1157 14.6859 19.1381 14.6859ZM4.58903 14.1239C4.58903 13.8457 4.76864 13.6173 5.06216 13.6173C5.3426 13.6173 5.53193 13.8359 5.53193 14.1239C5.53193 14.4119 5.3426 14.6305 5.06216 14.6305C4.76864 14.6305 4.58903 14.402 4.58903 14.1239ZM5.85158 14.1239V13.3327H5.51251V13.5248C5.40496 13.3824 5.24177 13.2929 5.01996 13.2929C4.58268 13.2929 4.23987 13.6408 4.23987 14.1239C4.23987 14.6074 4.58268 14.9549 5.01996 14.9549C5.24177 14.9549 5.40496 14.8655 5.51251 14.723V14.9151H5.85158V14.1239ZM17.3098 14.1239C17.3098 13.8457 17.4894 13.6173 17.783 13.6173C18.0638 13.6173 18.2527 13.8359 18.2527 14.1239C18.2527 14.4119 18.0638 14.6305 17.783 14.6305C17.4894 14.6305 17.3098 14.402 17.3098 14.1239ZM18.5728 14.1239V12.6973H18.2333V13.5248C18.1258 13.3824 17.9626 13.2929 17.7408 13.2929C17.3035 13.2929 16.9607 13.6408 16.9607 14.1239C16.9607 14.6074 17.3035 14.9549 17.7408 14.9549C17.9626 14.9549 18.1258 14.8655 18.2333 14.723V14.9151H18.5728V14.1239ZM10.0605 13.601C10.2789 13.601 10.4194 13.7401 10.4552 13.9848H9.64595C9.68222 13.7563 9.81885 13.601 10.0605 13.601ZM10.0672 13.2929C9.61014 13.2929 9.29048 13.6306 9.29048 14.1239C9.29048 14.6271 9.62321 14.9549 10.09 14.9549C10.3249 14.9549 10.54 14.8954 10.7293 14.7332L10.5631 14.4782C10.4324 14.5839 10.2659 14.6438 10.1094 14.6438C9.89094 14.6438 9.6919 14.5411 9.64301 14.2561H10.801C10.8044 14.2133 10.8077 14.1702 10.8077 14.1239C10.8044 13.6306 10.5041 13.2929 10.0672 13.2929ZM14.1614 14.1239C14.1614 13.8457 14.3411 13.6173 14.6346 13.6173C14.9151 13.6173 15.1044 13.8359 15.1044 14.1239C15.1044 14.4119 14.9151 14.6305 14.6346 14.6305C14.3411 14.6305 14.1614 14.402 14.1614 14.1239ZM15.424 14.1239V13.3327H15.085V13.5248C14.977 13.3824 14.8142 13.2929 14.5924 13.2929C14.1551 13.2929 13.8123 13.6408 13.8123 14.1239C13.8123 14.6074 14.1551 14.9549 14.5924 14.9549C14.8142 14.9549 14.977 14.8655 15.085 14.723V14.9151H15.424V14.1239ZM12.2465 14.1239C12.2465 14.604 12.5759 14.9549 13.0785 14.9549C13.3134 14.9549 13.4699 14.9018 13.6394 14.7662L13.4766 14.488C13.3493 14.5809 13.2156 14.6305 13.0684 14.6305C12.7977 14.6271 12.5987 14.4286 12.5987 14.1239C12.5987 13.8193 12.7977 13.6207 13.0684 13.6173C13.2156 13.6173 13.3493 13.6669 13.4766 13.7597L13.6394 13.4816C13.4699 13.346 13.3134 13.2929 13.0785 13.2929C12.5759 13.2929 12.2465 13.6438 12.2465 14.1239ZM16.6183 13.2929C16.4226 13.2929 16.2952 13.3858 16.2071 13.5248V13.3327H15.871V14.9151H16.2105V14.0281C16.2105 13.7662 16.3213 13.6207 16.5432 13.6207C16.6119 13.6207 16.6836 13.6306 16.7553 13.6605L16.8598 13.3361C16.7848 13.3062 16.6869 13.2929 16.6183 13.2929ZM7.52866 13.4585C7.36543 13.3494 7.14066 13.2929 6.89268 13.2929C6.49759 13.2929 6.24331 13.4851 6.24331 13.7995C6.24331 14.0576 6.43265 14.2167 6.78144 14.2664L6.94162 14.2895C7.12759 14.316 7.21533 14.3657 7.21533 14.4551C7.21533 14.5775 7.09137 14.6472 6.85986 14.6472C6.62495 14.6472 6.45539 14.571 6.34116 14.4816L6.18132 14.7495C6.3673 14.8885 6.60215 14.9549 6.85646 14.9549C7.30682 14.9549 7.56787 14.7396 7.56787 14.4384C7.56787 14.1603 7.3625 14.0148 7.02303 13.9651L6.8632 13.9416C6.71644 13.922 6.59881 13.8924 6.59881 13.7863C6.59881 13.6703 6.7097 13.601 6.89567 13.601C7.09471 13.601 7.28742 13.6772 7.3819 13.7367L7.52866 13.4585ZM11.9037 13.2929C11.708 13.2929 11.5807 13.3858 11.4929 13.5248V13.3327H11.1569V14.9151H11.4959V14.0281C11.4959 13.7662 11.6069 13.6207 11.8286 13.6207C11.8974 13.6207 11.9691 13.6306 12.0408 13.6605L12.1453 13.3361C12.0703 13.3062 11.9724 13.2929 11.9037 13.2929ZM9.01003 13.3327H8.45551V12.8526H8.11271V13.3327H7.79639V13.6472H8.11271V14.3691C8.11271 14.7362 8.25308 14.9549 8.65415 14.9549C8.80126 14.9549 8.97082 14.9087 9.07837 14.8325L8.98055 14.5376C8.87933 14.5972 8.76844 14.6271 8.68029 14.6271C8.51079 14.6271 8.45551 14.521 8.45551 14.3623V13.6472H9.01003V13.3327ZM3.94001 14.9151V13.922C3.94001 13.5479 3.70512 13.2963 3.32647 13.2929C3.12743 13.2895 2.92204 13.3524 2.77827 13.5745C2.67073 13.399 2.50119 13.2929 2.26294 13.2929C2.09639 13.2929 1.93358 13.3426 1.80624 13.5279V13.3327H1.4668V14.9151H1.80923V14.0379C1.80923 13.7632 1.95935 13.6173 2.19124 13.6173C2.41642 13.6173 2.53032 13.7662 2.53032 14.0345V14.9151H2.87312V14.0379C2.87312 13.7632 3.02959 13.6173 3.25477 13.6173C3.48629 13.6173 3.5972 13.7662 3.5972 14.0345V14.9151H3.94001Z" fill="#9A9C9E"/>
+<path d="M19.321 9.65226V9.42114H19.2616L19.1929 9.57991L19.1246 9.42114H19.0648V9.65226H19.107V9.47797L19.1712 9.62837H19.2149L19.2792 9.47757V9.65226H19.321ZM18.9442 9.65226V9.46055H19.0204V9.42149H18.8262V9.46055H18.9024V9.65226H18.9442Z" fill="#F79410"/>
+<path d="M12.5687 10.6466H7.42969V1.27515H12.5687V10.6466Z" fill="#FF5F00"/>
+<path d="M7.75944 5.9601C7.75944 4.05907 8.63661 2.36567 10.0026 1.27437C9.00371 0.476366 7.74297 6.10352e-05 6.3729 6.10352e-05C3.1293 6.10352e-05 0.5 2.66843 0.5 5.9601C0.5 9.2518 3.1293 11.9202 6.3729 11.9202C7.74297 11.9202 9.00371 11.4439 10.0026 10.6459C8.63661 9.55457 7.75944 7.86118 7.75944 5.9601Z" fill="#EB001B"/>
+<path d="M19.501 5.96004C19.501 9.25173 16.8717 11.9201 13.6281 11.9201C12.258 11.9201 10.9973 11.4438 9.99805 10.6458C11.3644 9.5545 12.2416 7.86112 12.2416 5.96004C12.2416 4.05901 11.3644 2.36561 9.99805 1.27431C10.9973 0.476305 12.258 0 13.6281 0C16.8717 0 19.501 2.66837 19.501 5.96004Z" fill="#F79E1B"/>
+</g>
+<defs>
+<clipPath id="clip0_755_10452">
+<rect width="19" height="15" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_755_10460)">
+<path d="M12.4445 10.7712H7.41211V1.68384H12.4445V10.7712Z" fill="#6C6BBD"/>
+<path d="M19.0548 9.80714V9.58301H18.9967L18.9294 9.73699L18.8625 9.58301H18.804V9.80714H18.8453V9.63816L18.9082 9.78401H18.951L19.0139 9.63776V9.80714H19.0548ZM18.6859 9.80714V9.62126H18.7604V9.58341H18.5703V9.62126H18.6449V9.80714H18.6859Z" fill="#0099DF"/>
+<path d="M16.5396 14.7956V14.8335H16.5744C16.582 14.8335 16.5886 14.8316 16.593 14.8287C16.5977 14.8258 16.6003 14.8206 16.6003 14.8144C16.6003 14.8082 16.5977 14.8034 16.593 14.8004C16.5886 14.7971 16.582 14.7956 16.5744 14.7956H16.5396ZM16.5747 14.7692C16.5926 14.7692 16.6065 14.7733 16.6164 14.7813C16.6263 14.7894 16.631 14.8004 16.631 14.8144C16.631 14.8262 16.6274 14.8357 16.6193 14.8434C16.6117 14.8507 16.6003 14.8555 16.586 14.8574L16.6321 14.9106H16.5963L16.5535 14.8577H16.5396V14.9106H16.5096V14.7692H16.5747ZM16.5656 14.9591C16.582 14.9591 16.5974 14.9562 16.6113 14.95C16.6255 14.9437 16.638 14.9353 16.6486 14.9246C16.6592 14.914 16.6676 14.9014 16.6738 14.8867C16.6797 14.8724 16.6829 14.857 16.6829 14.8405C16.6829 14.8239 16.6797 14.8085 16.6738 14.7942C16.6676 14.7798 16.6592 14.767 16.6486 14.7564C16.638 14.7457 16.6255 14.7372 16.6113 14.7313C16.5974 14.7251 16.582 14.7221 16.5656 14.7221C16.5491 14.7221 16.5334 14.7251 16.5191 14.7313C16.5045 14.7372 16.4917 14.7457 16.4811 14.7564C16.4705 14.767 16.4621 14.7798 16.4562 14.7942C16.45 14.8085 16.4471 14.8239 16.4471 14.8405C16.4471 14.857 16.45 14.8724 16.4562 14.8867C16.4621 14.9014 16.4705 14.914 16.4811 14.9246C16.4917 14.9353 16.5045 14.9437 16.5191 14.95C16.5334 14.9562 16.5491 14.9591 16.5656 14.9591ZM16.5656 14.688C16.5871 14.688 16.6069 14.692 16.6255 14.7001C16.6445 14.7078 16.6607 14.7189 16.6749 14.7328C16.6888 14.7464 16.6998 14.7626 16.7078 14.7813C16.7159 14.7997 16.7199 14.8195 16.7199 14.8405C16.7199 14.8614 16.7159 14.8813 16.7078 14.8996C16.6998 14.918 16.6888 14.9342 16.6749 14.9478C16.6607 14.9617 16.6445 14.9728 16.6255 14.9808C16.6069 14.9889 16.5871 14.993 16.5656 14.993C16.5436 14.993 16.5235 14.9889 16.5045 14.9808C16.4855 14.9728 16.4691 14.9617 16.4551 14.9478C16.4412 14.9342 16.4302 14.918 16.4222 14.8996C16.4142 14.8813 16.4102 14.8614 16.4102 14.8405C16.4102 14.8195 16.4142 14.7997 16.4222 14.7813C16.4302 14.7626 16.4412 14.7464 16.4551 14.7328C16.4691 14.7189 16.4855 14.7078 16.5045 14.7001C16.5235 14.692 16.5436 14.688 16.5656 14.688Z" fill="#231F20"/>
+<path d="M14.1408 13.3373C14.2077 13.3373 14.3039 13.3502 14.3774 13.3792L14.275 13.6937C14.2048 13.6647 14.1346 13.6552 14.0673 13.6552C13.8501 13.6552 13.7415 13.7963 13.7415 14.0498V14.9103H13.4091V13.3759H13.7382V13.5622C13.8245 13.4274 13.9492 13.3373 14.1408 13.3373ZM12.9129 13.6809H12.3698V14.3742C12.3698 14.5282 12.4239 14.6311 12.5903 14.6311C12.6766 14.6311 12.7852 14.6021 12.884 14.5444L12.9798 14.8299C12.8745 14.9037 12.7084 14.9489 12.5647 14.9489C12.1716 14.9489 12.0345 14.7369 12.0345 14.3805V13.6809H11.7244V13.3759H12.0345V12.9104H12.3698V13.3759H12.9129V13.6809ZM8.66032 14.0083C8.69578 13.7867 8.82959 13.6357 9.06623 13.6357C9.28012 13.6357 9.41761 13.7705 9.45273 14.0083H8.66032ZM9.79796 14.1431C9.79468 13.6647 9.50064 13.3373 9.07245 13.3373C8.6252 13.3373 8.31216 13.6647 8.31216 14.1431C8.31216 14.6307 8.63798 14.9486 9.09507 14.9486C9.32509 14.9486 9.53576 14.8909 9.72115 14.7336L9.55804 14.4863C9.43045 14.5892 9.26734 14.6469 9.11413 14.6469C8.90018 14.6469 8.70528 14.5473 8.65738 14.2714H9.79134C9.79467 14.2295 9.79796 14.1879 9.79796 14.1431ZM11.2577 13.7676C11.1653 13.7096 10.9769 13.6357 10.782 13.6357C10.5999 13.6357 10.4913 13.7033 10.4913 13.8158C10.4913 13.9182 10.6061 13.9473 10.7498 13.9664L10.9063 13.9888C11.2387 14.0373 11.4398 14.1784 11.4398 14.4481C11.4398 14.7402 11.1843 14.9489 10.7436 14.9489C10.4942 14.9489 10.2642 14.8846 10.0821 14.7497L10.2386 14.4896C10.3505 14.5763 10.5169 14.6502 10.7469 14.6502C10.9736 14.6502 11.095 14.583 11.095 14.4639C11.095 14.3776 11.0087 14.3291 10.8266 14.3037L10.6701 14.2813C10.3282 14.2328 10.1428 14.0788 10.1428 13.8286C10.1428 13.5236 10.3922 13.3373 10.7787 13.3373C11.0215 13.3373 11.242 13.3921 11.4015 13.4979L11.2577 13.7676ZM15.3553 13.6545C15.2869 13.6545 15.2236 13.6666 15.1648 13.6905C15.1062 13.7147 15.0554 13.7485 15.0126 13.7919C14.9698 13.8352 14.9362 13.8874 14.9117 13.948C14.8872 14.0086 14.8751 14.0755 14.8751 14.1482C14.8751 14.2214 14.8872 14.2879 14.9117 14.3485C14.9362 14.4091 14.9698 14.4613 15.0126 14.5047C15.0554 14.5481 15.1062 14.5819 15.1648 14.6061C15.2236 14.6303 15.2869 14.6421 15.3553 14.6421C15.4236 14.6421 15.4872 14.6303 15.5458 14.6061C15.6046 14.5819 15.6558 14.5481 15.6987 14.5047C15.7421 14.4613 15.7758 14.4091 15.8007 14.3485C15.8252 14.2879 15.8373 14.2214 15.8373 14.1482C15.8373 14.0755 15.8252 14.0086 15.8007 13.948C15.7758 13.8874 15.7421 13.8352 15.6987 13.7919C15.6558 13.7485 15.6046 13.7147 15.5458 13.6905C15.4872 13.6666 15.4236 13.6545 15.3553 13.6545ZM15.3553 13.3373C15.4737 13.3373 15.5835 13.3579 15.6844 13.3995C15.7853 13.4406 15.8727 13.4975 15.9462 13.5699C16.0201 13.6423 16.0775 13.7279 16.1192 13.8264C16.1609 13.9252 16.1817 14.0325 16.1817 14.1482C16.1817 14.264 16.1609 14.3713 16.1192 14.4701C16.0775 14.5686 16.0201 14.6546 15.9462 14.727C15.8727 14.7994 15.7853 14.856 15.6844 14.8974C15.5835 14.9386 15.4737 14.9592 15.3553 14.9592C15.2368 14.9592 15.1271 14.9386 15.0261 14.8974C14.9252 14.856 14.8385 14.7994 14.7654 14.727C14.6923 14.6546 14.6348 14.5686 14.5932 14.4701C14.5515 14.3713 14.5306 14.264 14.5306 14.1482C14.5306 14.0325 14.5515 13.9252 14.5932 13.8264C14.6348 13.7279 14.6923 13.6423 14.7654 13.5699C14.8385 13.4975 14.9252 13.4406 15.0261 13.3995C15.1271 13.3579 15.2368 13.3373 15.3553 13.3373ZM6.71921 14.1431C6.71921 13.8734 6.89516 13.6519 7.18258 13.6519C7.45722 13.6519 7.64261 13.8639 7.64261 14.1431C7.64261 14.4224 7.45722 14.634 7.18258 14.634C6.89516 14.634 6.71921 14.4128 6.71921 14.1431ZM7.95565 14.1431V13.3759H7.62355V13.5622C7.5179 13.424 7.35847 13.3373 7.14124 13.3373C6.71305 13.3373 6.37767 13.6742 6.37767 14.1431C6.37767 14.6116 6.71305 14.9489 7.14124 14.9489C7.35847 14.9489 7.5179 14.8622 7.62355 14.724V14.9103H7.95565V14.1431ZM6.08368 14.9103V13.9473C6.08368 13.5846 5.85366 13.3407 5.48322 13.3373C5.28831 13.334 5.08682 13.395 4.94639 13.6103C4.84108 13.4402 4.67469 13.3373 4.44139 13.3373C4.27865 13.3373 4.11885 13.3855 3.99415 13.5652V13.3759H3.66211V14.9103H3.99744V14.0597C3.99744 13.7933 4.14445 13.6519 4.37117 13.6519C4.59168 13.6519 4.70358 13.7963 4.70358 14.0564V14.9103H5.03891V14.0597C5.03891 13.7933 5.1925 13.6519 5.41264 13.6519C5.63973 13.6519 5.74834 13.7963 5.74834 14.0564V14.9103H6.08368Z" fill="#9A9C9E"/>
+<path d="M19.2318 6.2269C19.2318 9.41879 16.6569 12.0063 13.4806 12.0063C12.1389 12.0063 10.9043 11.5444 9.92578 10.7706C11.2638 9.71238 12.1228 8.07034 12.1228 6.2269C12.1228 4.38348 11.2638 2.74141 9.92578 1.68319C10.9043 0.909377 12.1389 0.44751 13.4806 0.44751C16.6569 0.44751 19.2318 3.03499 19.2318 6.2269Z" fill="#0099DF"/>
+<path d="M7.73391 6.2269C7.73391 4.38348 8.59294 2.74141 9.9306 1.68319C8.95239 0.909377 7.71785 0.44751 6.3761 0.44751C3.19979 0.44751 0.625 3.03499 0.625 6.2269C0.625 9.41879 3.19979 12.0063 6.3761 12.0063C7.71785 12.0063 8.95239 11.5444 9.9306 10.7706C8.59294 9.71238 7.73391 8.07034 7.73391 6.2269Z" fill="#EB001B"/>
+</g>
+<defs>
+<clipPath id="clip0_755_10460">
+<rect width="19" height="15" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="40" height="15" viewBox="0 0 40 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M33.0975 2H26.7695C27.1097 4.10931 29.151 6.08254 31.3964 6.08254H36.4315C36.4996 5.87841 36.4996 5.60624 36.4996 5.40212C36.4996 3.49693 35.0027 2 33.0975 2Z" fill="url(#paint0_linear_755_10469)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.3145 6.42273V11.5259H30.3764V8.80421H33.0981C34.595 8.80421 35.8878 7.78358 36.296 6.42273H27.3145Z" fill="#4DB45F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4277 2V11.5259H19.1494C19.1494 11.5259 19.8299 11.5259 20.1701 10.8455C22.0072 7.17122 22.5515 6.08254 22.5515 6.08254H22.8918V11.5259H25.9537V2H23.232C23.232 2 22.5515 2.06804 22.2113 2.68042C20.6464 5.81037 19.8299 7.44339 19.8299 7.44339H19.4896V2H16.4277Z" fill="#4DB45F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 11.5259V2H6.5619C6.5619 2 7.44646 2 7.92275 3.36085C9.14751 6.96709 9.2836 7.44339 9.2836 7.44339C9.2836 7.44339 9.55577 6.55884 10.6444 3.36085C11.1207 2 12.0053 2 12.0053 2H15.0672V11.5259H12.0053V6.42275H11.6651L9.96402 11.5259H8.60317L6.90212 6.42275H6.5619V11.5259H3.5Z" fill="#4DB45F"/>
+<defs>
+<linearGradient id="paint0_linear_755_10469" x1="26.752" y1="4.04127" x2="36.4996" y2="4.04127" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00B4E6"/>
+<stop offset="1" stop-color="#088CCB"/>
+</linearGradient>
+</defs>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_755_10475)">
+<mask id="mask0_755_10475" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.247 7.68C13.2493 7.74525 13.25 7.80975 13.25 7.875C13.25 10.9815 10.7315 13.5 7.625 13.5C4.5185 13.5 2 10.9815 2 7.875C2 4.7685 4.5185 2.25 7.625 2.25C8.768 2.25 9.83074 2.5905 10.718 3.17625L11.9428 2.2065C10.745 1.293 9.248 0.75 7.625 0.75C3.68975 0.75 0.5 3.93975 0.5 7.875C0.5 11.8103 3.68975 15 7.625 15C11.5603 15 14.75 11.8103 14.75 7.875C14.75 7.43475 14.7103 7.0035 14.6338 6.585L13.247 7.68Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_755_10475)">
+<path d="M13.2455 7.65225C13.2485 7.7265 13.25 7.80075 13.25 7.875C13.25 10.9815 10.7315 13.5 7.625 13.5C4.5185 13.5 2 10.9815 2 7.875C2 4.7685 4.5185 2.25 7.625 2.25C8.768 2.25 9.83074 2.5905 10.718 3.17625L11.9428 2.2065C10.745 1.293 9.248 0.75 7.625 0.75C3.68975 0.75 0.5 3.93975 0.5 7.875C0.5 11.8103 3.68975 15 7.625 15C11.5603 15 14.75 11.8103 14.75 7.875C14.75 7.42125 14.7072 6.97725 14.6262 6.54675L13.2455 7.65225Z" fill="#24A236"/>
+<path d="M6.80289 6.77935C10.2839 6.77935 13.1058 3.95745 13.1058 0.476463C13.1058 -3.00453 10.2839 -5.82642 6.80289 -5.82642C3.3219 -5.82642 0.5 -3.00453 0.5 0.476463C0.5 3.95745 3.3219 6.77935 6.80289 6.77935Z" fill="#008ACB"/>
+<g filter="url(#filter0_f_755_10475)">
+<path d="M5.98077 21.0294C9.00771 21.0294 11.4615 18.5756 11.4615 15.5486C11.4615 12.5217 9.00771 10.0679 5.98077 10.0679C2.95383 10.0679 0.5 12.5217 0.5 15.5486C0.5 18.5756 2.95383 21.0294 5.98077 21.0294Z" fill="#77F628"/>
+</g>
+<g filter="url(#filter1_f_755_10475)">
+<path d="M1.04913 10.6158C4.07607 10.6158 6.5299 8.162 6.5299 5.13506C6.5299 2.10811 4.07607 -0.345703 1.04913 -0.345703C-1.97781 -0.345703 -4.43164 2.10811 -4.43164 5.13506C-4.43164 8.162 -1.97781 10.6158 1.04913 10.6158Z" fill="#19E7E8"/>
+</g>
+<g filter="url(#filter2_f_755_10475)">
+<path d="M0.501797 15.0007C2.92335 15.0007 4.88641 13.0376 4.88641 10.6161C4.88641 8.19451 2.92335 6.23145 0.501797 6.23145C-1.91976 6.23145 -3.88281 8.19451 -3.88281 10.6161C-3.88281 13.0376 -1.91976 15.0007 0.501797 15.0007Z" fill="#DEFA1B"/>
+</g>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0368 4.76324L7.625 9.74999V7.87499L13.2492 3.50024C13.5537 3.89099 13.8178 4.31399 14.0368 4.76324Z" fill="#24A236"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.10339L7.625 9.74965V7.87465L5 6.23364V8.10339Z" fill="#24A236"/>
+</g>
+<defs>
+<filter id="filter0_f_755_10475" x="-7.5" y="2.06787" width="26.9609" height="26.9615" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_755_10475"/>
+</filter>
+<filter id="filter1_f_755_10475" x="-12.4316" y="-8.3457" width="26.9609" height="26.9615" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_755_10475"/>
+</filter>
+<filter id="filter2_f_755_10475" x="-9.88281" y="0.231445" width="20.7695" height="20.7692" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3" result="effect1_foregroundBlur_755_10475"/>
+</filter>
+<clipPath id="clip0_755_10475">
+<rect width="15" height="15" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7996 14.58C16.7764 14.58 19.9996 11.3165 19.9996 7.29C19.9996 3.26349 16.7764 0 12.7996 0C8.82281 0 5.59961 3.26349 5.59961 7.29C5.59961 11.3165 8.82281 14.58 12.7996 14.58ZM12.7996 10.125C14.346 10.125 15.5996 8.85573 15.5996 7.29C15.5996 5.72427 14.346 4.455 12.7996 4.455C11.2532 4.455 9.99961 5.72427 9.99961 7.29C9.99961 8.85573 11.2532 10.125 12.7996 10.125Z" fill="#8A42F9"/>
+<path d="M5.6 2.43018H0L2.98638 12.1502H5.6V2.43018Z" fill="#8A42F9"/>
+                  </svg>
+                </div>
+                <div class="card-property__items">
+                  <svg width="34" height="15" viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.64736 3.43157C5.22919 3.14409 4.6835 3 4.01031 3H1.40408C1.1977 3 1.08369 3.10321 1.06203 3.30944L0.00332325 9.9552C-0.00768003 10.0205 0.00865059 10.0802 0.0521658 10.1344C0.0954321 10.1888 0.149851 10.2158 0.215024 10.2158H1.45297C1.6701 10.2158 1.78944 10.1129 1.81135 9.90641L2.1045 8.11472C2.11521 8.02789 2.15339 7.95729 2.21857 7.90292C2.28369 7.84865 2.36515 7.81315 2.46288 7.79692C2.56062 7.78079 2.65277 7.77262 2.7398 7.77262C2.82659 7.77262 2.9297 7.77815 3.04934 7.78895C3.16868 7.79976 3.24476 7.80508 3.27737 7.80508C4.21121 7.80508 4.94419 7.54195 5.47639 7.01509C6.00833 6.48853 6.2746 5.75833 6.2746 4.8242C6.2746 4.18352 6.06534 3.71934 5.64736 3.43142V3.43157ZM4.30362 5.42709C4.24915 5.80722 4.10814 6.05686 3.88011 6.17635C3.65203 6.296 3.32626 6.35554 2.90281 6.35554L2.36524 6.37177L2.64222 4.62883C2.66383 4.50949 2.73438 4.44974 2.85392 4.44974H3.16351C3.59766 4.44974 3.91277 4.51232 4.10824 4.63699C4.30361 4.76196 4.36879 5.02539 4.30362 5.42709V5.42709Z" fill="#003087"/>
+<path d="M33.1504 3H31.9451C31.8253 3 31.7548 3.05975 31.7333 3.17929L30.6745 9.9555L30.6582 9.98806C30.6582 10.0426 30.6799 10.094 30.7235 10.1429C30.7666 10.1916 30.8212 10.2161 30.8863 10.2161H31.9615C32.1675 10.2161 32.2816 10.1131 32.3036 9.90666L33.3623 3.24446V3.22828C33.3623 3.07618 33.2915 3.0002 33.1504 3.0002V3Z" fill="#009CDE"/>
+<path d="M18.5899 5.62275C18.5899 5.56858 18.5681 5.5169 18.525 5.46815C18.4814 5.41931 18.4325 5.39471 18.3783 5.39471H17.1241C17.0044 5.39471 16.9067 5.44928 16.8308 5.55757L15.1042 8.09873L14.3875 5.65541C14.3329 5.48179 14.2136 5.39471 14.0292 5.39471H12.8073C12.7529 5.39471 12.704 5.41921 12.6609 5.46815C12.6173 5.5169 12.5957 5.56868 12.5957 5.62275C12.5957 5.6446 12.7016 5.96484 12.9133 6.58381C13.125 7.20298 13.353 7.87084 13.5974 8.5876C13.8418 9.3042 13.9693 9.68449 13.9802 9.72755C13.0897 10.944 12.6446 11.5955 12.6446 11.6823C12.6446 11.8235 12.715 11.8941 12.8563 11.8941H14.1106C14.23 11.8941 14.3277 11.8399 14.4038 11.7312L18.5576 5.73671C18.5791 5.7152 18.5899 5.67736 18.5899 5.6227V5.62275Z" fill="#003087"/>
+<path d="M30.2689 5.39478H29.0309C28.8787 5.39478 28.7867 5.57402 28.7541 5.93245C28.4714 5.49819 27.956 5.28076 27.2065 5.28076C26.4247 5.28076 25.7595 5.57402 25.2112 6.16043C24.6628 6.74684 24.3887 7.43661 24.3887 8.22925C24.3887 8.87008 24.576 9.38041 24.9505 9.76035C25.3252 10.1407 25.8273 10.3305 26.4574 10.3305C26.7723 10.3305 27.0926 10.2652 27.4184 10.135C27.7441 10.0047 27.9991 9.83105 28.1841 9.61377C28.1841 9.62468 28.173 9.67337 28.1515 9.7602C28.1295 9.84723 28.1188 9.9126 28.1188 9.95567C28.1188 10.1296 28.1892 10.2163 28.3306 10.2163H29.4547C29.6607 10.2163 29.7803 10.1133 29.8128 9.90683L30.4807 5.65537C30.4914 5.59015 30.4752 5.53055 30.4318 5.47618C30.3882 5.42201 30.334 5.39478 30.2689 5.39478V5.39478ZM28.1432 8.60386C27.8663 8.87536 27.5323 9.01103 27.1415 9.01103C26.8264 9.01103 26.5714 8.9243 26.3759 8.75044C26.1803 8.57707 26.0826 8.33814 26.0826 8.03373C26.0826 7.63223 26.2183 7.29257 26.4899 7.0157C26.761 6.73877 27.098 6.60036 27.4998 6.60036C27.8036 6.60036 28.0561 6.68993 28.2572 6.86902C28.4579 7.04826 28.5587 7.29531 28.5587 7.61033C28.5586 8.00122 28.4201 8.33251 28.1432 8.60386Z" fill="#009CDE"/>
+<path d="M11.7652 5.39478H10.5272C10.3749 5.39478 10.2828 5.57402 10.2502 5.93245C9.957 5.49819 9.44114 5.28076 8.70273 5.28076C7.92086 5.28076 7.25564 5.57402 6.70732 6.16043C6.15885 6.74684 5.88477 7.43661 5.88477 8.22925C5.88477 8.87008 6.07212 9.38041 6.44678 9.76035C6.82143 10.1407 7.32355 10.3305 7.95347 10.3305C8.25738 10.3305 8.57249 10.2652 8.8982 10.135C9.22397 10.0047 9.48461 9.83105 9.68008 9.61377C9.63651 9.74397 9.6149 9.85804 9.6149 9.95567C9.6149 10.1296 9.68545 10.2163 9.82665 10.2163H10.9506C11.1567 10.2163 11.2763 10.1133 11.3089 9.90683L11.9768 5.65537C11.9875 5.59015 11.9712 5.53055 11.9279 5.47618C11.8845 5.42201 11.8302 5.39478 11.7652 5.39478V5.39478ZM9.63945 8.61192C9.36248 8.87829 9.02297 9.01103 8.62143 9.01103C8.30632 9.01103 8.05384 8.9243 7.86395 8.75044C7.67381 8.57707 7.57886 8.33814 7.57886 8.03373C7.57886 7.63223 7.71453 7.29257 7.98613 7.0157C8.25743 6.73877 8.59409 6.60031 8.99604 6.60031C9.29994 6.60031 9.55242 6.68993 9.75351 6.86902C9.95426 7.04826 10.0548 7.29531 10.0548 7.61033C10.0548 8.01212 9.91637 8.34615 9.63945 8.61192V8.61192Z" fill="#003087"/>
+<path d="M24.1513 3.43157C23.7332 3.14409 23.1877 3 22.5144 3H19.9244C19.7071 3 19.5876 3.10321 19.566 3.30944L18.5072 9.9552C18.4962 10.0205 18.5126 10.0802 18.5561 10.1344C18.5992 10.1888 18.6538 10.2158 18.7189 10.2158H20.0546C20.1849 10.2158 20.2717 10.1453 20.3152 10.0041L20.6085 8.11472C20.6193 8.02789 20.6572 7.95729 20.7225 7.90292C20.7877 7.84865 20.869 7.81315 20.9669 7.79692C21.0645 7.78079 21.1567 7.77262 21.2438 7.77262C21.3306 7.77262 21.4336 7.77815 21.5532 7.78895C21.6726 7.79976 21.7489 7.80508 21.7812 7.80508C22.7152 7.80508 23.4481 7.54195 23.9803 7.01509C24.5124 6.48853 24.7784 5.75833 24.7784 4.8242C24.7785 4.18352 24.5693 3.71929 24.1513 3.43142V3.43157ZM22.4818 6.11113C22.2429 6.27399 21.8844 6.35539 21.4068 6.35539L20.8854 6.37172L21.1623 4.62873C21.1839 4.50944 21.2545 4.44959 21.374 4.44959H21.6672C21.9061 4.44959 22.0961 4.46049 22.2375 4.48215C22.3784 4.50396 22.5144 4.57172 22.6446 4.68569C22.775 4.79975 22.8401 4.96545 22.8401 5.18253C22.8401 5.63879 22.7205 5.94812 22.4818 6.11113Z" fill="#009CDE"/>
+</svg>
+
+                </div>
+              </div>
+            </div>
+            <div class="card-property__item">
+              <div class="card-property__title">
+                Возврат товара
+              </div>
+              <p class="card-property__text">Если получателя не устроит качество цветов или работа флориста – напишите нам, в течение 24 часов! Мы решим данную проблему.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-review">
+      <div class="container">
+        <div class="review__wrapper">
+          <h1 class="title">Отзывы</h1>
+          <a class="review__link" href="#">Все отзывы</a>
+        </div>
+        <div class="review-slider">
+          <div class="review-slider__card">
+            <div class="review-slider__item">
+              <div class="review-slider__info">
+                <div class="star"></div>
+                <div class="review-slider__name">Мередова Елена Григорьевна</div>
+                <div class="review-slider__review">Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </div>
+              </div>
+              <div class="review-slider__user-icon">
+                <img class="review-slider__img" src="img/user-bg.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="review-slider__card">
+            <div class="review-slider__item">
+              <div class="review-slider__info">
+                <div class="star"></div>
+                <div class="review-slider__name">Мередова Елена Григорьевна</div>
+                <div class="review-slider__review">Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </div>
+              </div>
+              <div class="review-slider__user-icon">
+                <img class="review-slider__img" src="img/user-bg.png" alt="">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <h1 class="title">Рекомендуемые товары</h1>
+
+        <div class="delivery-flowers__wrapper">
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-second.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет 25 роз Нежный микс</div>
+              <div class="banner-card__settings">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-second.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                  <div class="banner-card__discount">-35%</div>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                  <div class="banner-card__discount">-35%</div>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                  <div class="banner-card__discount">-35%</div>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет роз Ред наоми 60 см</div>
+              <div class="banner-card__settings">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-third.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-four.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет 5 пионовидных роз Мисти баблс</div>
+              <div class="banner-card__settings banner-card__settings--active">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-four.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-second.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет роз микс 40 см</div>
+              <div class="banner-card__settings">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="watch">
+      <div class="container">
+        <div class="watch__inner">
+          <h1 class="title">Ранее вы смотрели</h1>
+
+        <div class="delivery-flowers__wrapper">
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-second.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет 25 роз Нежный микс</div>
+              <div class="banner-card__settings">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-second.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                  <div class="banner-card__discount">-35%</div>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                  <div class="banner-card__discount">-35%</div>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                  <div class="banner-card__discount">-35%</div>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет роз Ред наоми 60 см</div>
+              <div class="banner-card__settings">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-third.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-four.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет 5 пионовидных роз Мисти баблс</div>
+              <div class="banner-card__settings banner-card__settings--active">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="banner-card">
+
+            <div class="banner-card__body">
+              <div class="banner-card__slider">
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-four.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-second.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="banner-card__item">
+                  <img class="banner-card__img" src="img/slider/card-one.png" alt="flowers">
+                  <a class="banner-card__heart" href="#">
+                    <svg class="heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99998 3.58704C5.6516 -1.66734 1.06041 2.06612 1 6.09071C1 12.0822 8.2793 17 9.99998 17C11.7207 17 19 12.0822 19 6.09071C18.9396 2.06612 14.3484 -1.66734 9.99998 3.58704Z" fill="#F2F3F5"/>
+                      <path d="M1 6.09071L0.25 6.07945V6.09071H1ZM9.99998 3.58704L9.42219 4.06521C9.56467 4.23738 9.77651 4.33704 9.99998 4.33704C10.2235 4.33704 10.4353 4.23738 10.5778 4.06521L9.99998 3.58704ZM19 6.09071H19.7501L19.7499 6.07945L19 6.09071ZM1.74992 6.10196C1.77636 4.34039 2.80175 2.68479 4.20482 2.04091C4.89023 1.72637 5.68269 1.64218 6.54398 1.91143C7.41449 2.18355 8.40208 2.83256 9.42219 4.06521L10.5778 3.10887C9.4237 1.71433 8.20674 0.859628 6.99153 0.479749C5.76711 0.096991 4.59267 0.212514 3.57919 0.677612C1.58446 1.59301 0.284052 3.81644 0.250084 6.07945L1.74992 6.10196ZM9.99998 16.25C9.93037 16.25 9.73579 16.2165 9.39891 16.0811C9.08065 15.9532 8.69109 15.7573 8.2537 15.4949C7.37949 14.9703 6.3541 14.2039 5.37754 13.2544C3.40233 11.3341 1.75 8.78951 1.75 6.09071H0.25C0.25 9.3834 2.23732 12.2935 4.33193 14.3299C5.39027 15.3589 6.50735 16.1963 7.48194 16.7811C7.96896 17.0733 8.43039 17.3084 8.83957 17.4729C9.23013 17.6299 9.63943 17.75 9.99998 17.75V16.25ZM19.7499 6.07945C19.7159 3.81644 18.4155 1.59301 16.4208 0.677611C15.4073 0.212514 14.2329 0.0969911 13.0084 0.479749C11.7932 0.859628 10.5763 1.71433 9.42218 3.10887L10.5778 4.06521C11.5979 2.83256 12.5855 2.18355 13.456 1.91143C14.3173 1.64218 15.1098 1.72637 15.7952 2.04091C17.1982 2.68479 18.2236 4.34039 18.2501 6.10196L19.7499 6.07945ZM9.99998 17.75C10.3605 17.75 10.7698 17.6299 11.1604 17.4729C11.5696 17.3084 12.031 17.0733 12.518 16.7811C13.4926 16.1963 14.6097 15.3589 15.6681 14.3299C17.7627 12.2935 19.75 9.3834 19.75 6.09071H18.25C18.25 8.78951 16.5977 11.3341 14.6224 13.2544C13.6459 14.2039 12.6205 14.9703 11.7463 15.4949C11.3089 15.7573 10.9193 15.9532 10.6011 16.0811C10.2642 16.2165 10.0696 16.25 9.99998 16.25V17.75Z" fill="#353949"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            <div class="banner-card__info">
+              <div class="banner-card__title">Букет роз микс 40 см</div>
+              <div class="banner-card__settings">Высота: 60 см, Ширина: 35 см</div>
+              <div class="banner-card__content">
+                <div class="banner-card__price">
+                  <div class="banner-card__price-new">13 499 ₽</div>
+                  <div class="banner-card__price-old">15 499 ₽</div>
+                </div>
+                <a class="banner-card__add" href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8501 17.0637L17.1242 16.8752L17.8501 17.0637ZM18.9744 8.75375L19.7237 8.78587L18.9744 8.75375ZM3.69568 18.5787L3.83173 17.8411L3.69568 18.5787ZM0.276291 8.78587C0.359088 10.7176 0.657599 14.3011 1.42399 17.2522L2.87583 16.8752C2.14868 14.0751 1.85603 10.6141 1.77491 8.72164L0.276291 8.78587ZM3.55963 19.3163C4.78925 19.5431 6.85701 19.7551 10 19.7551V18.2551C6.91602 18.2551 4.94465 18.0464 3.83173 17.8411L3.55963 19.3163ZM18.2251 8.72164C18.144 10.6141 17.8513 14.0751 17.1242 16.8752L18.576 17.2522C19.3424 14.3011 19.6409 10.7176 19.7237 8.78587L18.2251 8.72164ZM16.1683 17.8411C15.0553 18.0464 13.084 18.2551 10 18.2551V19.7551C13.143 19.7551 15.2107 19.5431 16.4404 19.3163L16.1683 17.8411ZM2 8.50513H18V7.00513H2V8.50513ZM17.1242 16.8752C16.986 17.4073 16.6218 17.7575 16.1683 17.8411L16.4404 19.3163C17.5517 19.1113 18.3142 18.2603 18.576 17.2522L17.1242 16.8752ZM19.7237 8.78587C19.7664 7.7896 18.9608 7.00513 18 7.00513V8.50513C18.1438 8.50513 18.2297 8.61435 18.2251 8.72164L19.7237 8.78587ZM1.42399 17.2522C1.68577 18.2603 2.44831 19.1113 3.55963 19.3163L3.83173 17.8411C3.37815 17.7575 3.01403 17.4073 2.87583 16.8752L1.42399 17.2522ZM1.77491 8.72164C1.77032 8.61435 1.85623 8.50513 2 8.50513V7.00513C1.0392 7.00513 0.233589 7.7896 0.276291 8.78587L1.77491 8.72164Z" fill="white"/>
+                    <path d="M4 7.75513C4 8.16934 4.33579 8.50513 4.75 8.50513C5.16421 8.50513 5.5 8.16934 5.5 7.75513H4ZM14.5 7.75513C14.5 8.16934 14.8358 8.50513 15.25 8.50513C15.6642 8.50513 16 8.16934 16 7.75513H14.5ZM5.5 7.75513V6.00513H4V7.75513H5.5ZM9.75 1.75513H10.25V0.255127H9.75V1.75513ZM14.5 6.00513V7.75513H16V6.00513H14.5ZM10.25 1.75513C12.5972 1.75513 14.5 3.65792 14.5 6.00513H16C16 2.82949 13.4256 0.255127 10.25 0.255127V1.75513ZM5.5 6.00513C5.5 3.65792 7.40279 1.75513 9.75 1.75513V0.255127C6.57436 0.255127 4 2.82949 4 6.00513H5.5Z" fill="white"/>
+                    <path d="M7 12.2551V14.5051M13 12.2551V14.5051" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  В корзину
+                </a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="container">
+        <div class="advantage__inner">
+          <div class="advantage__item">
+            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37.4085 36.5943C38.6465 37.8323 38.6465 39.8383 37.4085 41.0743C36.1705 42.3123 34.1645 42.3123 32.9285 41.0743C31.6905 39.8363 31.6905 37.8303 32.9285 36.5943C34.1665 35.3563 36.1725 35.3563 37.4085 36.5943" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.4078 36.5935C16.6458 37.8315 16.6458 39.8375 15.4078 41.0735C14.1698 42.3115 12.1638 42.3115 10.9278 41.0735C9.69175 39.8355 9.68975 37.8295 10.9278 36.5935C12.1658 35.3575 14.1698 35.3555 15.4078 36.5935" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 8.00171H28C29.104 8.00171 30 8.89771 30 10.0017V30.0017H4" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 38.8337H6C4.896 38.8337 4 37.9377 4 36.8337V26.0017" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30 14.0017H38.646C39.464 14.0017 40.2 14.4997 40.502 15.2597L43.714 23.2877C43.902 23.7597 44 24.2637 44 24.7717V36.6677C44 37.7717 43.104 38.6677 42 38.6677H38.338" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M31.9998 38.8416H16.3398" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44 28.0017H36V20.0017H42.4" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 8.00171H14" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 14.0017H10" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 20.0017H4" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="advantage__text">Экспресс-доставка от 90 минут</p>
+          </div>
+          <div class="advantage__item">
+            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M25.213 6.54362L28.113 5.12562C29.451 4.47162 31.069 4.99563 31.767 6.31362L33.281 9.16563C33.681 9.91763 34.405 10.4436 35.245 10.5916L38.425 11.1496C39.893 11.4076 40.891 12.7816 40.683 14.2576L40.231 17.4536C40.111 18.2976 40.389 19.1496 40.981 19.7616L43.225 22.0816C44.261 23.1516 44.261 24.8516 43.225 25.9236L40.981 28.2436C40.389 28.8556 40.111 29.7076 40.231 30.5516L40.683 33.7476C40.891 35.2236 39.893 36.5976 38.425 36.8556L35.245 37.4136C34.405 37.5616 33.681 38.0876 33.281 38.8396L31.767 41.6916C31.069 43.0076 29.453 43.5336 28.113 42.8796L25.213 41.4616C24.447 41.0876 23.553 41.0876 22.787 41.4616L19.887 42.8796C18.549 43.5336 16.931 43.0096 16.233 41.6916L14.719 38.8376C14.319 38.0856 13.595 37.5596 12.755 37.4116L9.57505 36.8536C8.10705 36.5956 7.10905 35.2216 7.31705 33.7456L7.76905 30.5496C7.88905 29.7056 7.61105 28.8536 7.01905 28.2416L4.77505 25.9216C3.73905 24.8516 3.73905 23.1516 4.77505 22.0796L7.01905 19.7596C7.61105 19.1476 7.88905 18.2956 7.76905 17.4516L7.31905 14.2556C7.10905 12.7816 8.10905 11.4056 9.57705 11.1496L12.757 10.5916C13.595 10.4436 14.319 9.91763 14.719 9.16563L16.233 6.31362C16.931 4.99762 18.547 4.47162 19.887 5.12562L22.787 6.54362C23.551 6.91763 24.447 6.91763 25.213 6.54362Z" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 30.0017L30 18.0017" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.498 18.0017C18.222 18.0017 17.998 18.2257 18 18.5017C18 18.7777 18.224 19.0017 18.5 19.0017C18.776 19.0017 19 18.7777 19 18.5017C19 18.2257 18.776 18.0017 18.498 18.0017" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29.498 29.0017C29.222 29.0017 28.998 29.2257 29 29.5017C29 29.7777 29.224 30.0017 29.5 30.0017C29.776 30.0017 30 29.7777 30 29.5017C30 29.2257 29.776 29.0017 29.498 29.0017" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="advantage__text">Низкие цены</p>
+          </div>
+          <div class="advantage__item">
+            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.273 27.9033L4.5 34.8367L9.91667 38.0867L13.1667 43.5033L21.6145 34.6308" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M26.3848 34.6308L34.8326 43.5033L38.0826 38.0867L43.4993 34.8367L36.7263 27.9033" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34.7251 8.94392C40.648 14.8669 40.648 24.4699 34.7251 30.3928C28.8021 36.3158 19.1992 36.3158 13.2762 30.3928C7.35325 24.4699 7.35325 14.8669 13.2762 8.94392C19.1992 3.02097 28.8021 3.02097 34.7251 8.94392" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9995 25.2656L27.893 27.311C28.6513 27.7096 29.5375 27.0661 29.3923 26.2211L28.6492 21.8856L31.7995 18.8176C32.4127 18.2196 32.0747 17.1775 31.2275 17.054L26.8747 16.4213L24.929 12.4758C24.5498 11.7066 23.4557 11.7066 23.0765 12.4758L21.1308 16.4213L16.7758 17.0561C15.9287 17.1796 15.5907 18.2218 16.2038 18.8198L19.3542 21.8878L18.611 26.2233C18.4658 27.0683 19.352 27.7118 20.1103 27.3131L24.0038 25.2678H23.9995V25.2656Z" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="advantage__text">Каждый день поступление свежих цветов</p>
+          </div>
+          <div class="advantage__item">
+            <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34 41.1438C32.344 39.1438 30.172 38.1438 28 38.1438C30.172 38.1438 32.344 37.1438 34 35.1438" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 31.8697V44.0017H28V31.8677" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 38.1416H20" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M38.8823 20.9158C39.2383 20.6858 39.5803 20.4238 39.8923 20.1118L44.0003 16.0018C42.3083 14.3098 40.0423 13.5378 37.8283 13.6898C37.9783 11.4758 37.2083 9.20982 35.5163 7.51782L31.4083 11.6258C29.4503 13.5818 29.1503 16.5418 30.4603 18.8338" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39.1825 24.6738L29.1985 31.3298C28.5405 31.7678 27.7685 32.0018 26.9785 32.0018H21.0185C20.2285 32.0018 19.4565 31.7678 18.8005 31.3298L8.81653 24.6738C7.82453 24.0118 7.64453 22.6478 8.38853 21.7138C9.97053 19.7238 12.4105 18.4418 15.1545 18.4418C15.9925 18.4418 16.8105 18.6098 17.5865 18.8398C19.1785 17.0998 21.4645 16.0098 23.9985 16.0098C26.5325 16.0098 28.8185 17.0998 30.4325 18.8398C31.2085 18.6098 32.0045 18.4418 32.8645 18.4418C35.5905 18.4418 38.0285 19.7238 39.6125 21.7138C40.3525 22.6478 40.1745 24.0118 39.1825 24.6738V24.6738Z" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M27.5993 16.7977C29.0653 15.7037 30.0273 13.9717 30.0273 12.0017V6.19165C27.6333 6.19165 25.4873 7.24765 24.0273 8.92165C22.5673 7.24965 20.4213 6.19165 18.0273 6.19165V12.0017C18.0273 13.9597 18.9793 15.6817 20.4313 16.7777" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.118 20.9158C8.762 20.6858 8.42 20.4238 8.108 20.1118L4 16.0018C5.692 14.3098 7.958 13.5378 10.172 13.6898C10.022 11.4758 10.792 9.20982 12.484 7.51782L16.592 11.6258C18.55 13.5818 18.85 16.5418 17.54 18.8338" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="advantage__text">Опытные флористы</p>
+          </div>
+          <div class="advantage__item">
+            <svg width="34" height="40" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1429 7.28749C10.6951 7.28749 11.1429 6.83978 11.1429 6.28749C11.1429 5.73521 10.6951 5.28749 10.1429 5.28749V7.28749ZM23.8571 5.28749C23.3049 5.28749 22.8571 5.73521 22.8571 6.28749C22.8571 6.83978 23.3049 7.28749 23.8571 7.28749V5.28749ZM10.1429 5.28749C9.59058 5.28749 9.14286 5.73521 9.14286 6.28749C9.14286 6.83978 9.59058 7.28749 10.1429 7.28749V5.28749ZM23.8571 7.28749C24.4094 7.28749 24.8571 6.83978 24.8571 6.28749C24.8571 5.73521 24.4094 5.28749 23.8571 5.28749V7.28749ZM11.1429 6.28749C11.1429 5.73521 10.6951 5.28749 10.1429 5.28749C9.59058 5.28749 9.14286 5.73521 9.14286 6.28749H11.1429ZM9.14286 8.57321C9.14286 9.12549 9.59058 9.57321 10.1429 9.57321C10.6951 9.57321 11.1429 9.12549 11.1429 8.57321H9.14286ZM9.14286 6.28749C9.14286 6.83978 9.59058 7.28749 10.1429 7.28749C10.6951 7.28749 11.1429 6.83978 11.1429 6.28749H9.14286ZM11.1429 1.71606C11.1429 1.16378 10.6951 0.716064 10.1429 0.716064C9.59058 0.716064 9.14286 1.16378 9.14286 1.71606L11.1429 1.71606ZM24.8571 6.28749C24.8571 5.73521 24.4094 5.28749 23.8571 5.28749C23.3049 5.28749 22.8571 5.73521 22.8571 6.28749H24.8571ZM22.8571 8.57321C22.8571 9.12549 23.3049 9.57321 23.8571 9.57321C24.4094 9.57321 24.8571 9.12549 24.8571 8.57321H22.8571ZM22.8571 6.28749C22.8571 6.83978 23.3049 7.28749 23.8571 7.28749C24.4094 7.28749 24.8571 6.83978 24.8571 6.28749H22.8571ZM24.8571 1.71606C24.8571 1.16378 24.4094 0.716064 23.8571 0.716064C23.3049 0.716064 22.8571 1.16378 22.8571 1.71606L24.8571 1.71606ZM10.1429 5.28749C4.54112 5.28749 5.24521e-06 9.8286 5.24521e-06 15.4303H2.00001C2.00001 10.9332 5.64569 7.28749 10.1429 7.28749V5.28749ZM5.24521e-06 15.4303V29.1446H2.00001V15.4303H5.24521e-06ZM5.24521e-06 29.1446C5.24521e-06 34.7464 4.54112 39.2875 10.1429 39.2875V37.2875C5.64569 37.2875 2.00001 33.6418 2.00001 29.1446H5.24521e-06ZM10.1429 39.2875H23.8571V37.2875H10.1429V39.2875ZM23.8571 39.2875C29.4589 39.2875 34 34.7464 34 29.1446H32C32 33.6418 28.3543 37.2875 23.8571 37.2875V39.2875ZM34 29.1446V15.4303H32V29.1446H34ZM34 15.4303C34 9.8286 29.4589 5.28749 23.8571 5.28749V7.28749C28.3543 7.28749 32 10.9332 32 15.4303H34ZM10.1429 7.28749L23.8571 7.28749V5.28749L10.1429 5.28749V7.28749ZM9.14286 6.28749V8.57321H11.1429V6.28749H9.14286ZM11.1429 6.28749V1.71606L9.14286 1.71606V6.28749H11.1429ZM22.8571 6.28749V8.57321H24.8571V6.28749H22.8571ZM24.8571 6.28749V1.71606L22.8571 1.71606V6.28749H24.8571Z" fill="#0093A2"/>
+              <path d="M7.85742 22.2875L12.4288 29.1446L26.1431 17.7161" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="advantage__text">Работаем без выходных</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top__wrapper">
+
+          <div class="footer-top__wrap">
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Цветы поштучно</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Розы поштучно</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Кустовая роза</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Пионовидная роза</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Хризантемы поштучно</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Альстромерия</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Тюльпаны</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Герберы поштучно</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Лилии поштучно</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Пионы</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Эустома</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Каллы поштучно</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Маттиола</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-top__wrap">
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Розы</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Голландские розы</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Местная роза</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Кустовые розы</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Пионовидные розы</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букет из 101 розы</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-top__wrap">
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Букеты</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Сборные букеты</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты из хризантем</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты из Альстромерий</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты из эустом</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты Гипсофилы</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты из гербер</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты из пионов</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Букеты из тюльпанов</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="footer-top__wrap">
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Композиции</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Ящики с цветами</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Коробки с цветами</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Корзины с цветами</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Подарки</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Мягкие игрушки</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Коробки конфет</a></li>
+              </ul>
+            </div>
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Шары</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Шары в виде цифр</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Фольгированные шары</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Латексные шары</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-top__wrap">
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Информация</h6>
+              <ul class="footer-top__list">
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Доставка</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Оплата</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Отзывы</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Блог</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Гарантии</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Вопрос и ответ</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">О компании</a></li>
+                <li class="footer-top__item"><a class="footer-top__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="footer-top__wrap">
+            <div class="footer-top__items">
+             <h6 class="footer-top__title">Информация</h6>
+             <div class="footer-top__info">
+               <div class="footer-top__info-title">Служба Доставки</div>
+               <a class="footer-top__info-link" href="#">+7 (920) 211-49-03</a>
+             </div>
+            <div class="footer-top__info">
+               <div class="footer-top__info-title">Ул. Вл. Невского 17</div>
+               <a class="footer-top__info-link" href="#">+7 (920) 211-49-03</a>
+             </div>
+             <div class="footer-top__info">
+               <div class="footer-top__info-title">Ул. Революции 1905 года 80</div>
+               <a class="footer-top__info-link" href="#">+7 (906) 678-65-99</a>
+             </div>
+             <div class="footer-top__info footer-top__info--last">
+               <div class="footer-top__info-title">E-mail:</div>
+               <a class="footer-top__info-email" href="#">info@lavkaroz.ru</a>
+             </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__wrapper">
+          <div class="footer-bottom__copyright">© 2014 – 2022. Интернет-магазин «Лавка Роз»</div>
+          <div class="footer-bottom__accept">
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/wallet.svg" alt="wallet">
+            </div>
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/visa.svg" alt="visa">
+            </div>
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/mastercard.svg" alt="mastercard">
+            </div>
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/maestro.svg" alt="maestro">
+            </div>
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/mir.svg" alt="mir">
+            </div>
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/sber.svg" alt="sber">
+            </div>
+            <div class="footer-bottom__accept-item">
+              <img src="img/icons/youmoney.svg" alt="youmoney">
+            </div>
+          </div>
+          <div class="footer-bottom__social">
+            Мы в социальных сетях:
+            <ul class="footer-bottom__list">
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">
+                  <img src="img/icons/vk.svg" alt="vk">
+                </a>
+              </li>
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">
+                  <img src="img/icons/facebook.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">
+                  <img src="img/icons/inst.svg" alt="inst">
+                </a>
+              </li>
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="#">
+                  <img src="img/icons/youtube.svg" alt="youtube">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $('.card-slider__thumb-big').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.card-slider__preview'
+    });
+    $('.card-slider__preview').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.card-slider__thumb-big',
+      //dots: true,
+      //centerMode: true,
+      arrows: false,
+      focusOnSelect: true
+    });
+    $('.card-info__input').styler();
+    $('.review-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/arrow-prev.svg" alt=""></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="img/slider/arrow-next.svg" alt=""></button>'  
+    })
+  </script>
+</body>
+</html>

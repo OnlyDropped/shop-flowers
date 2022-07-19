@@ -1,0 +1,81 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+  margin-top: -16px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  //@extend %CeraPro-Regular-400;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #555;
+}
+.title {
+  font-family: "Yeseva One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #222a46;
+}
+.arrow {
+  transition: all 0.4s ease-in;
+}
+.arrow-active {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease-in;
+}
+.breadcrumbs {
+  //background-color: rgba($color: #c36767, $alpha: 1);
+  padding: 22px 0 10px;
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  &__item + .breadcrumbs__item {
+    margin-left: 34px;
+  }
+  &__item{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      right: -25px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      background-image: url('../img/icons/arrow-right.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__item:last-child::after{
+    content: none
+  }
+  &__link {
+    @extend %TTNorms-Medium-400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #505567;
+  }
+  &__link--first{
+    color: #1B1C21;
+  }
+}
+button{
+  @extend %TTNorms-Medium-400;
+}
