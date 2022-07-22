@@ -1,4 +1,9 @@
 @media (max-width: 375px) {
+  .header-banner {
+    &__inner {
+      padding: 14px 0;
+    }
+  }
   .header-menu {
     display: none;
   }
@@ -15,25 +20,232 @@
       margin-left: 21px;
     }
   }
+  .banner-slider {
+    width: 345px;
+    &__item {
+      padding: 50px 0 38px 20px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__span {
+      margin: 25px 0 5px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .slick-dots {
+      width: 140px;
+      bottom: 15px;
+    }
+    .slick-arrow {
+      width: 32px;
+      height: 32px;
+      left: 15px;
+      transform: translateY(-75%);
+    }
+    .slick-next.slick-arrow {
+      right: 15px;
+    }
+  }
+  .banner-list {
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    &__item {
+      height: 80px;
+      white-space: nowrap;
+      padding: 10px 26px;
+      min-width: max-content;
+      &:nth-child(4) {
+        margin-left: 15px;
+        margin-right: 0;
+      }
+      &:nth-child(5) {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  .delivery-flowers {
+    padding: 20px 0;
+    .title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__see-more {
+      display: block;
+    }
+    &__inner {
+      margin-bottom: 20px;
+    }
+  }
+  .chapter {
+    padding: 40px 0;
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    &__card {
+      width: 254px;
+    }
+    &__img {
+      width: 254px;
+      height: 200px;
+    }
+    &__info-title {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+  }
+  .gallery {
+    padding: 40px 0;
+  }
+  .review {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      row-gap: 20px;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .review-slider {
+    width: 334px;
+    &__item {
+      flex-direction: column;
+      row-gap: 15px;
+      width: 334px;
+      padding: 25px;
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__wrap {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__review {
+      width: 285px;
+    }
+    &__user-icon {
+      width: 100px;
+      height: 100px;
+      margin-right: auto;
+    }
+    &__img {
+      width: 80px;
+      height: 80px;
+    }
+    .slick-arrow {
+      left: -9px;
+    }
+    .slick-next.slick-arrow {
+      right: -9px;
+    }
+  }
+  .news {
+    padding: 40px 0;
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__card {
+      width: 320px;
+    }
+    &__header {
+      width: 320px;
+    }
+    &__img {
+      width: 320px;
+      height: 230px;
+    }
+  }
+  .flowers-delivery {
+    padding: 40px 0;
+    &__title {
+      width: 195px;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 auto 20px;
+    }
+    &__inner {
+      padding: 20px 25px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .about-flowers {
+    padding: 40px 0;
+    background-position-y: bottom;
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+      width: 340px;
+    }
+    &__wrapper {
+      flex-direction: column;
+      padding-right: 0;
+    }
+    &__item {
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 15px;
+      &::before {
+        left: 0;
+      }
+    }
+    &__img {
+      margin-right: auto;
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
   .footer-top {
     &__wrapper {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 15px;
     }
-    &__title{
+    &__title {
       cursor: pointer;
       position: relative;
-      &::after{
+      &::after {
         position: absolute;
-        content: '';
+        content: "";
         right: 0;
         width: 12px;
         height: 8px;
         top: 8px;
-        background-image: url('../img/icons/arrow-down.svg');
+        background-image: url("../img/icons/arrow-down.svg");
       }
     }
-    &__list{
+    &__list {
       display: none;
     }
   }
