@@ -227,6 +227,127 @@
       }
     }
   }
+  .breadcrumbs {
+    padding: 15px 0 10px;
+  }
+  .catalog-filter {
+    &__box {
+      &:first-child {
+        display: block;
+        .catalog-filter__title {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__closed {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .catalog-content {
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__sort {
+      display: none;
+    }
+    &__info {
+      margin: 15px 0 20px;
+    }
+    &__filters {
+      width: 163px;
+    }
+  }
+  .catalog-content {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 20px;
+      row-gap: 20px;
+      column-gap: 10px;
+      margin-bottom: 40px;
+    }
+    &__slider {
+      width: 164px;
+    }
+    &__card {
+      width: 164px;
+      overflow: hidden;
+    }
+    &__img {
+      width: 164px;
+      height: 150px;
+    }
+    .slick-dots {
+      bottom: 0;
+    }
+    &__body {
+      padding: 10px 15px 15px 15px;
+    }
+    &__body-title {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 5px 0 10px;
+    }
+    &__size {
+      flex-wrap: wrap;
+    }
+    &__tabs {
+      margin-left: 0;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    &__tab {
+      font-size: 10px;
+      line-height: 14px;
+    }
+    &__tab + .catalog-content__tab {
+      margin-left: 0px;
+    }
+    &__box {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 5px;
+    }
+    &__new-price {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__old-price {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__discount-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__discount-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 15px 0;
+    }
+    &__discount-subtitle {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__view {
+      max-width: 100%;
+    }
+    &__select {
+      position: absolute;
+      top: 72%;
+      right: 0;
+    }
+  }
   .footer-top {
     &__wrapper {
       grid-template-columns: repeat(1, 1fr);

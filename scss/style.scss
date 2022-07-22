@@ -1079,6 +1079,12 @@
     border-bottom: 1px solid #e2e4eb;
     border-radius: 5px;
     padding: 20px;
+    &:first-child{
+      display: none;
+    }
+  }
+  &__closed{
+    display: none;
   }
   &__items {
     padding: 15px 20px;
@@ -1270,6 +1276,9 @@
 .catalog-content {
   width: 874px;
   margin-left: 20px;
+  &__filters{
+    display: none;
+  }
   &__top {
     display: flex;
     align-items: center;
