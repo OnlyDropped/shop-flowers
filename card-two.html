@@ -12,17 +12,31 @@
 </head>
 <body>
   
-  <header class="header">
+  <header class="header header-catalog">
 
       <div class="header-menu">
         <div class="container">
-          <div class="header-menu__inner">
+          <div class="header-menu__wrapper">
+            <button class="header-menu__hamburger">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6.00049H21" stroke="#1B1C21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 12.0005H21" stroke="#1B1C21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18.0005H21" stroke="#1B1C21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="header-menu__delivery">Доставка цветов в Воронеже</div>
+            </button>
+            <div class="header-menu__inner">
             <div class="header-menu__info">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7" cy="6.99999" r="6" stroke="#353949" stroke-width="1.5"/>
                 <path d="M7 4.33333V7L9 8.33333" stroke="#353949" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               Пн-Сб: 8:00–20:00 Вс: 9:00–20:00
+              <div class="header-menu__close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.80365 22.1365C8.51076 22.4294 8.51076 22.9043 8.80365 23.1972C9.09655 23.4901 9.57142 23.4901 9.86431 23.1972L8.80365 22.1365ZM16.531 16.5305C16.8239 16.2376 16.8239 15.7627 16.531 15.4698C16.2381 15.1769 15.7632 15.1769 15.4703 15.4698L16.531 16.5305ZM15.4703 15.4698C15.1774 15.7627 15.1774 16.2376 15.4703 16.5305C15.7632 16.8234 16.2381 16.8234 16.531 16.5305L15.4703 15.4698ZM23.1976 9.86383C23.4905 9.57093 23.4905 9.09606 23.1976 8.80317C22.9048 8.51027 22.4299 8.51027 22.137 8.80317L23.1976 9.86383ZM16.531 15.4698C16.2381 15.1769 15.7632 15.1769 15.4703 15.4698C15.1774 15.7627 15.1774 16.2376 15.4703 16.5305L16.531 15.4698ZM22.137 23.1972C22.4299 23.4901 22.9048 23.4901 23.1976 23.1972C23.4905 22.9043 23.4905 22.4294 23.1976 22.1365L22.137 23.1972ZM15.4703 16.5305C15.7632 16.8234 16.2381 16.8234 16.531 16.5305C16.8239 16.2376 16.8239 15.7627 16.531 15.4698L15.4703 16.5305ZM9.86431 8.80317C9.57142 8.51027 9.09655 8.51027 8.80365 8.80317C8.51076 9.09606 8.51076 9.57093 8.80365 9.86383L9.86431 8.80317ZM9.86431 23.1972L16.531 16.5305L15.4703 15.4698L8.80365 22.1365L9.86431 23.1972ZM16.531 16.5305L23.1976 9.86383L22.137 8.80317L15.4703 15.4698L16.531 16.5305ZM15.4703 16.5305L22.137 23.1972L23.1976 22.1365L16.531 15.4698L15.4703 16.5305ZM16.531 15.4698L9.86431 8.80317L8.80365 9.86383L15.4703 16.5305L16.531 15.4698Z" fill="#222A46"/>
+                </svg>
+              </div>
             </div>
             <ul class="header-menu__list">
               <li class="header-menu__item"><a class="header-menu__link" href="#">Доставка</a></li>
@@ -45,6 +59,65 @@
               <li class="header-menu__item"><a class="header-menu__link" href="#">Контакты</a></li>
             </ul>
 
+            
+
+            <div class="header-menu__down">
+              <div class="header-info__down">
+                  <div class="header-info__top">
+                    <ul class="header-info__top-list">
+                      <li class="header-info__top-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11143 2.75015C3.24419 1.55893 3.64452 1.22482 4.12723 1.06933C4.46129 0.981944 4.81164 0.977092 5.148 1.05519C5.5908 1.1837 5.70794 1.28136 7.15993 2.72573C8.43557 3.99406 8.56301 4.13156 8.68529 4.37957C8.91912 4.8149 8.95565 5.32918 8.7857 5.7931C8.65698 6.14648 8.47419 6.38036 7.70057 7.15523L7.19597 7.66025C7.06346 7.79468 7.03232 7.99883 7.11874 8.16655C8.23983 10.0759 9.83037 11.6682 11.7399 12.7927C11.9597 12.9101 12.2303 12.8722 12.4092 12.6988L12.8945 12.2221C13.1945 11.9152 13.5121 11.626 13.8458 11.356C14.3699 11.0347 15.0229 11.0061 15.5732 11.2802C15.8423 11.4087 15.9311 11.4884 17.2466 12.7991C18.6034 14.1496 18.642 14.1921 18.7913 14.5017C19.0723 15.0144 19.0694 15.6353 18.7836 16.1453C18.6381 16.4331 18.5493 16.5372 17.786 17.316C17.3252 17.7863 16.8914 18.2155 16.8219 18.2784C16.1921 18.7989 15.3842 19.0543 14.5692 18.9904C13.078 18.8547 11.6347 18.3946 10.3407 17.6424C7.47418 16.1263 5.03395 13.9173 3.2429 11.2172C2.8528 10.6521 2.50598 10.0585 2.2054 9.4413C1.39906 8.06165 0.982659 6.4895 1.00055 4.89229C1.06211 4.05672 1.46351 3.28269 2.11143 2.75015Z" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        +7 (920) 211-49-03
+                      </li>
+                      <li class="header-info__top-item">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.4209 18.654L6.93847 19.2282L7.4209 18.654ZM14.2503 7.87975C14.2503 10.1196 13.1694 12.3037 11.8145 14.1479C10.468 15.9807 8.91197 17.395 8.09696 18.0797L9.06182 19.2282C9.92434 18.5036 11.5788 17.0022 13.0233 15.036C14.4595 13.0812 15.7503 10.5828 15.7503 7.87975H14.2503ZM7.90333 18.0797C7.08832 17.395 5.53231 15.9807 4.18579 14.1479C2.83089 12.3037 1.75 10.1196 1.75 7.87975H0.25C0.25 10.5828 1.5408 13.0812 2.97696 15.036C4.42151 17.0022 6.07595 18.5036 6.93847 19.2282L7.90333 18.0797ZM1.75 7.87975C1.75 4.42789 4.54828 1.62961 8.00014 1.62961V0.129608C3.71986 0.129608 0.25 3.59947 0.25 7.87975H1.75ZM8.00014 1.62961C11.452 1.62961 14.2503 4.42789 14.2503 7.87975H15.7503C15.7503 3.59947 12.2804 0.129608 8.00014 0.129608V1.62961ZM8.09696 18.0797C8.06261 18.1086 8.0288 18.1179 8.00014 18.1179C7.97149 18.1179 7.93768 18.1086 7.90333 18.0797L6.93847 19.2282C7.55696 19.7478 8.44332 19.7478 9.06182 19.2282L8.09696 18.0797Z" fill="#505567"/>
+                          <path d="M7.99995 10.3358C9.58342 10.3358 10.8671 9.05218 10.8671 7.46871C10.8671 5.88524 9.58342 4.60158 7.99995 4.60158C6.41647 4.60158 5.13281 5.88524 5.13281 7.46871C5.13281 9.05218 6.41647 10.3358 7.99995 10.3358Z" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        ул. Революции 1905 года 80
+                      </li>
+                      <li class="header-info__top-item">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.4209 18.654L6.93847 19.2282L7.4209 18.654ZM14.2503 7.87975C14.2503 10.1196 13.1694 12.3037 11.8145 14.1479C10.468 15.9807 8.91197 17.395 8.09696 18.0797L9.06182 19.2282C9.92434 18.5036 11.5788 17.0022 13.0233 15.036C14.4595 13.0812 15.7503 10.5828 15.7503 7.87975H14.2503ZM7.90333 18.0797C7.08832 17.395 5.53231 15.9807 4.18579 14.1479C2.83089 12.3037 1.75 10.1196 1.75 7.87975H0.25C0.25 10.5828 1.5408 13.0812 2.97696 15.036C4.42151 17.0022 6.07595 18.5036 6.93847 19.2282L7.90333 18.0797ZM1.75 7.87975C1.75 4.42789 4.54828 1.62961 8.00014 1.62961V0.129608C3.71986 0.129608 0.25 3.59947 0.25 7.87975H1.75ZM8.00014 1.62961C11.452 1.62961 14.2503 4.42789 14.2503 7.87975H15.7503C15.7503 3.59947 12.2804 0.129608 8.00014 0.129608V1.62961ZM8.09696 18.0797C8.06261 18.1086 8.0288 18.1179 8.00014 18.1179C7.97149 18.1179 7.93768 18.1086 7.90333 18.0797L6.93847 19.2282C7.55696 19.7478 8.44332 19.7478 9.06182 19.2282L8.09696 18.0797Z" fill="#505567"/>
+                          <path d="M7.99995 10.3358C9.58342 10.3358 10.8671 9.05218 10.8671 7.46871C10.8671 5.88524 9.58342 4.60158 7.99995 4.60158C6.41647 4.60158 5.13281 5.88524 5.13281 7.46871C5.13281 9.05218 6.41647 10.3358 7.99995 10.3358Z" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        ул. Вл. Невского 17
+                      </li>
+                      <li class="header-info__top-item" style="color: #0093A2;">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.49592 14.8199C1.61411 15.7778 2.38404 16.5321 3.34421 16.6302C5.48059 16.8483 7.70887 17.1168 9.99958 17.1168C12.2903 17.1168 14.5186 16.8483 16.655 16.6302C17.6151 16.5321 18.385 15.7778 18.5032 14.8199C18.7341 12.9491 18.9992 11.001 18.9992 8.99996C18.9992 6.9989 18.7341 5.05083 18.5032 3.18005C18.385 2.22215 17.6151 1.4678 16.655 1.36976C14.5186 1.15161 12.2903 0.883148 9.99958 0.883148C7.70887 0.883148 5.48059 1.15161 3.34421 1.36976C2.38404 1.4678 1.61411 2.22215 1.49592 3.18005C1.26509 5.05083 1 6.9989 1 8.99996C1 11.001 1.26509 12.9491 1.49592 14.8199Z" stroke="#505567" stroke-width="1.5" stroke-linejoin="round"/>
+                          <path d="M1.44531 3.53452L8.76082 9.30255C9.48707 9.87517 10.5112 9.87517 11.2374 9.30255L18.553 3.53452" stroke="#505567" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                        info@lavkaroz.ru
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-info__social">
+                    <div class="header-info__social-title">Напишите нам:</div>
+                    <ul class="header-info__social-list">
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/WhatsApp.svg" alt="WhatsApp">
+                      </a>
+                    </li>
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/Telegram.svg" alt="Telegram.svg">
+                      </a>
+                    </li>
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/Vkontakte.svg" alt="Vkontakte">
+                      </a>
+                    </li>
+                      <li class="header-info__social-item"><a class="header-info__social-link" href="#">
+                        <img src="img/icons/Instagram.svg" alt="Instagram">
+                      </a>
+                    </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            </div>
             <div class="header-menu__wrap">
               <a class="header-menu__wrap-item" href="#">
                 <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,6 +135,7 @@
               </a>
             </div>
           </div>
+    
         </div>
       </div>
 
@@ -83,7 +157,7 @@
 
             <div class="header-info__list">
 
-              <div class="header-info__item">
+              <div class="header-info__item header-info__item--heart">
                 <a class="header-info__link" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11143 2.75015C3.24419 1.55893 3.64452 1.22482 4.12723 1.06933C4.46129 0.981944 4.81164 0.977092 5.148 1.05519C5.5908 1.1837 5.70794 1.28136 7.15993 2.72573C8.43557 3.99406 8.56301 4.13156 8.68529 4.37957C8.91912 4.8149 8.95565 5.32918 8.7857 5.7931C8.65698 6.14648 8.47419 6.38036 7.70057 7.15523L7.19597 7.66025C7.06346 7.79468 7.03232 7.99883 7.11874 8.16655C8.23983 10.0759 9.83037 11.6682 11.7399 12.7927C11.9597 12.9101 12.2303 12.8722 12.4092 12.6988L12.8945 12.2221C13.1945 11.9152 13.5121 11.626 13.8458 11.356C14.3699 11.0347 15.0229 11.0061 15.5732 11.2802C15.8423 11.4087 15.9311 11.4884 17.2466 12.7991C18.6034 14.1496 18.642 14.1921 18.7913 14.5017C19.0723 15.0144 19.0694 15.6353 18.7836 16.1453C18.6381 16.4331 18.5493 16.5372 17.786 17.316C17.3252 17.7863 16.8914 18.2155 16.8219 18.2784C16.1921 18.7989 15.3842 19.0543 14.5692 18.9904C13.078 18.8547 11.6347 18.3946 10.3407 17.6424C7.47418 16.1263 5.03395 13.9173 3.2429 11.2172C2.8528 10.6521 2.50598 10.0585 2.2054 9.4413C1.39906 8.06165 0.982659 6.4895 1.00055 4.89229C1.06211 4.05672 1.46351 3.28269 2.11143 2.75015Z" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -444,7 +518,7 @@
                   Купить
                 </button>
               </div>
-              <button class="card-info__click">Купить в один клик</button>
+              <button class="card-info__click">Купить в 1 клик</button>
               <button class="card-info__button">
                 <img src="img/icons/heart.svg" alt="">
               </button>
@@ -1423,7 +1497,21 @@
       //dots: true,
       //centerMode: true,
       arrows: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 376,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+        ]
     });
     $('.card-info__input').styler();
     $('.review-slider').slick({
@@ -1432,6 +1520,14 @@
       prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/arrow-prev.svg" alt=""></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="img/slider/arrow-next.svg" alt=""></button>'  
     })
+
+    $('.header-menu__hamburger').on('click', function name(params) {
+      $('.header-menu__inner').toggleClass('header-menu__inner--show');
+    });
+
+    $('.header-menu__close').on('click', function name(params) {
+      $('.header-menu__inner').removeClass('header-menu__inner--show');
+    });
   </script>
 </body>
 </html>

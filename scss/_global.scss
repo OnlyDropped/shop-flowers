@@ -49,22 +49,22 @@ body {
   &__item + .breadcrumbs__item {
     margin-left: 34px;
   }
-  &__item{
+  &__item {
     position: relative;
-    &::after{
+    &::after {
       position: absolute;
-      content: '';
+      content: "";
       right: -25px;
       top: 6px;
       width: 14px;
       height: 14px;
-      background-image: url('../img/icons/arrow-right.svg');
+      background-image: url("../img/icons/arrow-right.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
   }
-  &__item:last-child::after{
-    content: none
+  &__item:last-child::after {
+    content: none;
   }
   &__link {
     @extend %TTNorms-Medium-400;
@@ -72,10 +72,24 @@ body {
     line-height: 20px;
     color: #505567;
   }
-  &__link--first{
-    color: #1B1C21;
+  &__link--first {
+    color: #1b1c21;
   }
 }
-button{
+button {
   @extend %TTNorms-Medium-400;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  @extend %TTNorms-Medium-400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7d818e;
+  outline: none;
 }

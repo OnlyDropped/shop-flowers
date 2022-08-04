@@ -394,7 +394,7 @@
       </div>
     </section>
 
-    <section class="cart">
+    <section class="cart cart-pickup">
       <div class="container">
         <div class="cart__inner">
           <div class="cart-content">
@@ -529,8 +529,8 @@
                 <div class="cart-content__form-title">Текст открытки</div>
                 <textarea class="cart-content__textarea" placeholder="Текст открытки"></textarea>
                 <div class="cart-content__tabs">
-                  <button class="cart-content__tab">Самовывоз</button>
-                  <button class="cart-content__tab cart-content__tab--active">Доставка</button>
+                  <button class="cart-content__tab cart-content__tab--active">Самовывоз</button>
+                  <button class="cart-content__tab">Доставка</button>
                 </div>
                 <div class="cart-content__items">
                   <div class="cart-content__items-head">
@@ -548,72 +548,33 @@
                     </div>
                   </div>
                 </div>
+
+
                 <div class="cart-content__items">
                   <div class="cart-content__items-head">
                     <span class="cart-content__items-span">2</span>
-                    Получатель
+                    Детали самовывоза
                   </div>
 
-                  <label class="catalog-filter__label">
-                    <input class="catalog-filter__hidden" type="checkbox">
-                    <div class="catalog-filter__checkbox">
-                      <svg class="catalog-filter__checkmark" width="16" height="11" viewBox="0 0 16 11" fill="none"   xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 5.5L5.667 10L15 1" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    Я сам получу заказ
-                  </label>
+                  <div class="cart-content__subtitle">Магазины в Воронеже</div>
 
-                  <div class="cart-content__inner">
-                    <div class="cart-content__box">
-                      <div class="cart-content__form-title">Имя получателя*</div>
-                      <input class="cart-content__input" type="text" placeholder="Введите имя">
-                    </div>
-                    <div class="cart-content__box">
-                      <div class="cart-content__form-title">Телефон получателя*</div>
-                      <input class="cart-content__input" type="tel" placeholder="+7 (___) ___-__-__">
-                    </div>
-                  </div>
-                </div>
+                  <div class="cart-content__payment cart-content__payment--active">
+                    <label class="tovar-info__label">                      
+                      <input class="tovar-info__checkbox" type="radio" name="test" style="display:none"/>
+                      <span class="tovar-info__span">
+                        <div class="tovar-info__round"></div>
+                        ул. Революции 1905 года, 80                                              
+                      </span>
+                    </label>
 
-                <div class="cart-content__items">
-                  <div class="cart-content__items-head">
-                    <span class="cart-content__items-span">3</span>
-                    Детали доставки
-                  </div>
+                    <label class="tovar-info__label">                      
+                      <input class="tovar-info__checkbox" type="radio" name="test" style="display:none"/>
+                      <span class="tovar-info__span">
+                        <div class="tovar-info__round"></div>                        
+                        ул. Владимира Невского, 17                                              
+                      </span>
+                    </label>
 
-                  <div class="cart-content__subtitle">Адрес</div>
-
-                  <label class="catalog-filter__label">
-                    <input class="catalog-filter__hidden" type="checkbox">
-                    <div class="catalog-filter__checkbox">
-                      <svg class="catalog-filter__checkmark" width="16" height="11" viewBox="0 0 16 11" fill="none"   xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 5.5L5.667 10L15 1" stroke="#505567" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    Уточнить у получателя адрес
-                  </label>
-                  
-                  <div class="cart-content__inner">
-                    <div class="cart-content__box">
-                      <div class="cart-content__form-title">Адрес</div>
-                      <input class="cart-content__input" type="text" placeholder="Воронеж, ул. Кольцовская, 38">
-                    </div>
-                  </div>
-
-                  <div class="cart-content__inner cart-content__inner--second">
-                    <div class="cart-content__box">
-                      <div class="cart-content__form-title">Квартира, офис</div>
-                      <input class="cart-content__input" type="text" placeholder="167">
-                    </div>
-                    <div class="cart-content__box">
-                      <div class="cart-content__form-title">Подьезд</div>
-                      <input class="cart-content__input" type="tel" placeholder="3">
-                    </div>
-                    <div class="cart-content__box">
-                      <div class="cart-content__form-title">Этаж</div>
-                      <input class="cart-content__input" type="tel" placeholder="8">
-                    </div>
                   </div>
 
                   <div class="cart-content__subtitle" style="margin-top: 30px">Время</div>
@@ -637,13 +598,27 @@
 
                 <div class="cart-content__items">
                   <div class="cart-content__items-head">
-                    <span class="cart-content__items-span">4</span>
+                    <span class="cart-content__items-span">3</span>
                     Способы оплаты
                   </div>
 
                   <div class="cart-content__payment">
+
                     <label class="tovar-info__label">                      
-                      <input class="tovar-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                      <input class="tovar-info__checkbox" type="radio" name="test" style="display:none"/>
+                      <span class="tovar-info__span">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.99609 14.001L4.5477 9.74837C4.84136 9.25892 5.26851 8.86337 5.77904 8.6081L6.36447 8.31539C6.78121 8.10702 7.24074 7.99854 7.70667 7.99854H22.0044" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.99609 21.0038L9.76036 18.9209C10.5649 18.6302 11.2551 18.0893 11.7297 17.3776L14.7238 12.8878C15.1593 12.2348 15.0733 11.3651 14.5183 10.8101V10.8101C13.8754 10.1672 12.8331 10.1671 12.1901 10.8099L9.99859 13.0004H7.99776" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9833 14.0011H19.6886C20.9912 13.9774 22.0282 12.9027 22.0054 11.6001V7.39831C22.0282 6.0957 20.9912 5.02098 19.6886 4.99731H12.3171C11.0145 5.02098 9.97751 6.0957 10.0004 7.39831V7.39831V13.0006" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                        Оплата при получении
+                        <div class="tovar-info__round"></div>                      
+                      </span>
+                    </label>
+
+                    <label class="tovar-info__label">                      
+                      <input class="tovar-info__checkbox" type="radio" name="test" style="display:none"/>
                       <span class="tovar-info__span">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 12.6101H19" stroke="#7D818E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -658,7 +633,7 @@
                     </label>
 
                     <label class="tovar-info__label">                      
-                      <input class="tovar-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                      <input class="tovar-info__checkbox" type="radio" name="test" style="display:none"/>
                       <span class="tovar-info__span">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M7.49996 3V4.8C7.475 5.10292 7.6975 5.36992 7.99996 5.4H12C12.3024 5.36992 12.5249 5.10292 12.5 4.8V3" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -673,7 +648,7 @@
                     </label>
 
                     <label class="tovar-info__label">                      
-                      <input class="tovar-info__checkbox" type="checkbox" name="test" style="display:none"/>
+                      <input class="tovar-info__checkbox" type="radio" name="test" style="display:none"/>
                       <span class="tovar-info__span">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M8.0008 22H16.0008C20.0208 22 20.7408 20.39 20.9508 18.43L21.7008 10.43C21.9708 7.99 21.2708 6 17.0008 6H7.0008C2.7308 6 2.0308 7.99 2.3008 10.43L3.0508 18.43C3.2608 20.39 3.9808 22 8.0008 22Z" stroke="#7D818E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1086,7 +1061,7 @@
       infinite: false,
       prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/arrow-prev.svg" alt=""></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="img/slider/arrow-next.svg" alt=""></button>',
-        responsive: [
+      responsive: [
         {
         breakpoint: 769,
         settings: {
@@ -1105,8 +1080,6 @@
       },
       ]
     });
-
-
     $('.header-menu__hamburger').on('click', function name(params) {
       $('.header-menu__inner').toggleClass('header-menu__inner--show');
     });

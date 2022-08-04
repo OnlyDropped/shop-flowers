@@ -78,6 +78,14 @@ $('.review-slider').slick({
   ] 
 })
 
+$('.header-menu__hamburger').on('click', function name(params) {
+  $('.header-menu__inner').toggleClass('header-menu__inner--show');
+});
+
+$('.header-menu__close').on('click', function name(params) {
+  $('.header-menu__inner').removeClass('header-menu__inner--show');
+});
+
 
 
 
