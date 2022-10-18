@@ -165,6 +165,44 @@ textarea::placeholder, .header-banner__title, .header-menu__hamburger .header-me
   font-style: normal;
 }
 
+.index {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(149deg, #18bb9c 0%, #6a39af 42%, #bb1894 72%, #733586 100%);
+  background: linear-gradient(315deg, #c1267f 25%, #902ed6 48%, #df8339);
+  -webkit-animation: gradient 10s infinite linear;
+          animation: gradient 10s infinite linear;
+  background-size: 700%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
+
+.start-page__link {
+  color: #fff;
+}
+
 body,
 html {
   height: 100%;
@@ -338,6 +376,7 @@ textarea::placeholder {
   font-size: 20px;
   line-height: 24px;
   color: forestgreen;
+  color: #fff;
   text-align: center;
 }
 
